@@ -39,3 +39,6 @@ yarn-error.log*
 # typescript
 *.tsbuildinfo
 next-env.d.ts
+
+# Root Certificates folder (source files, not served by Next.js - keep in /public/certificates only)
+/Certificates/

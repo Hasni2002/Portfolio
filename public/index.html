@@ -1,0 +1,413 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hasni Ahamed | Civil Engineering Portfolio</title>
+  <meta name="description" content="Professional portfolio of Hasni Ahamed — Civil Engineering Undergraduate at KDU Sri Lanka. Structural design, hydrology, highway engineering and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Montserrat:wght@700;800;900&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet" />
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+    :root {
+      --navy:   #0d1b2a;
+      --deep:   #16324f;
+      --steel:  #4e6e81;
+      --mint:   #4caf50;
+      --sky:    #81c3d7;
+      --gold:   #f4b942;
+      --white:  #f0f4f8;
+    }
+
+    html, body {
+      width: 100%; height: 100%; overflow: hidden;
+      font-family: 'Inter', sans-serif;
+      background: var(--navy);
+      color: var(--white);
+    }
+
+    /* ── Animated Blueprint Grid ── */
+    .grid-bg {
+      position: fixed; inset: 0; z-index: 0;
+      background-size: 60px 60px, 12px 12px;
+      background-image:
+        linear-gradient(to right, rgba(78,110,129,0.12) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(78,110,129,0.12) 1px, transparent 1px),
+        linear-gradient(to right, rgba(78,110,129,0.04) 1px, transparent 1px),
+        linear-gradient(to bottom, rgba(78,110,129,0.04) 1px, transparent 1px);
+      animation: gridDrift 40s linear infinite;
+    }
+    @keyframes gridDrift {
+      0%   { background-position: 0 0, 0 0, 0 0, 0 0; }
+      100% { background-position: 60px 60px, 12px 12px, 60px 60px, 12px 12px; }
+    }
+
+    /* ── Liquid Glass Blobs ── */
+    .blob {
+      position: fixed; border-radius: 50%; filter: blur(100px);
+      pointer-events: none; z-index: 0;
+    }
+    .blob-1 {
+      width: 55vw; height: 55vw;
+      top: -15%; left: -15%;
+      background: radial-gradient(circle, rgba(76,175,80,0.25) 0%, rgba(22,50,79,0.1) 70%);
+      animation: blob1 28s ease-in-out infinite alternate;
+    }
+    .blob-2 {
+      width: 50vw; height: 50vw;
+      bottom: -15%; right: -15%;
+      background: radial-gradient(circle, rgba(129,195,215,0.2) 0%, rgba(13,27,42,0.05) 70%);
+      animation: blob2 35s ease-in-out infinite alternate;
+    }
+    .blob-3 {
+      width: 38vw; height: 38vw;
+      top: 30%; right: 5%;
+      background: radial-gradient(circle, rgba(244,185,66,0.12) 0%, transparent 70%);
+      animation: blob3 22s ease-in-out infinite alternate;
+    }
+    @keyframes blob1 { 0% { transform: translate(0,0) scale(1);} 100% { transform: translate(60px,-80px) scale(1.2); } }
+    @keyframes blob2 { 0% { transform: translate(0,0) scale(1);} 100% { transform: translate(-60px,60px) scale(0.85); } }
+    @keyframes blob3 { 0% { transform: translate(0,0) scale(1);} 100% { transform: translate(40px,-50px) scale(1.15); } }
+
+    /* ── Floating Particles ── */
+    .particles { position: fixed; inset: 0; z-index: 0; overflow: hidden; }
+    .particle {
+      position: absolute; border-radius: 50%;
+      background: rgba(76,175,80,0.6);
+      animation: float linear infinite;
+    }
+    @keyframes float {
+      0%   { transform: translateY(110vh) scale(0); opacity: 0; }
+      10%  { opacity: 1; }
+      90%  { opacity: 0.6; }
+      100% { transform: translateY(-10vh) scale(1); opacity: 0; }
+    }
+
+    /* ── Hero Card ── */
+    .hero {
+      position: relative; z-index: 10;
+      display: flex; flex-direction: column;
+      align-items: center; justify-content: center;
+      min-height: 100vh;
+      padding: 2rem;
+      text-align: center;
+    }
+
+    /* Engineering accent bar */
+    .accent-bar {
+      display: flex; align-items: center; gap: 10px;
+      margin-bottom: 1.5rem;
+    }
+    .accent-bar-line {
+      height: 2px; width: 60px;
+      background: linear-gradient(90deg, transparent, var(--mint));
+      border-radius: 1px;
+    }
+    .accent-bar-line.right {
+      background: linear-gradient(90deg, var(--mint), transparent);
+    }
+    .accent-bar-text {
+      font-family: 'Poppins', sans-serif;
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.3em;
+      color: var(--mint);
+      text-transform: uppercase;
+    }
+
+    /* Portrait */
+    .portrait-ring {
+      position: relative;
+      width: 160px; height: 160px;
+      margin-bottom: 2rem;
+    }
+    .portrait-ring::before {
+      content: '';
+      position: absolute; inset: -4px;
+      border-radius: 50%;
+      background: conic-gradient(var(--mint), var(--sky), var(--gold), var(--mint));
+      animation: spin 6s linear infinite;
+    }
+    @keyframes spin { to { transform: rotate(360deg); } }
+    .portrait-ring::after {
+      content: '';
+      position: absolute; inset: -1px;
+      border-radius: 50%;
+      background: var(--navy);
+    }
+    .portrait-img {
+      position: relative; z-index: 1;
+      width: 100%; height: 100%;
+      border-radius: 50%;
+      object-fit: cover;
+      object-position: top;
+      border: 3px solid rgba(255,255,255,0.1);
+    }
+
+    /* Name + Title */
+    .name {
+      font-family: 'Montserrat', sans-serif;
+      font-size: clamp(2.2rem, 6vw, 4rem);
+      font-weight: 900;
+      letter-spacing: -0.02em;
+      line-height: 1.05;
+      background: linear-gradient(135deg, #ffffff 0%, var(--sky) 40%, var(--mint) 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      margin-bottom: 0.5rem;
+    }
+    .title {
+      font-family: 'Poppins', sans-serif;
+      font-size: clamp(0.9rem, 2vw, 1.15rem);
+      font-weight: 500;
+      color: var(--sky);
+      letter-spacing: 0.05em;
+      margin-bottom: 1.75rem;
+    }
+
+    /* Tags */
+    .tags {
+      display: flex; flex-wrap: wrap; gap: 0.6rem;
+      justify-content: center;
+      margin-bottom: 2.5rem;
+    }
+    .tag {
+      display: inline-flex; align-items: center; gap: 6px;
+      padding: 0.35rem 0.85rem;
+      border-radius: 999px;
+      font-size: 0.75rem; font-weight: 600;
+      letter-spacing: 0.04em;
+      backdrop-filter: blur(12px) saturate(140%);
+      -webkit-backdrop-filter: blur(12px) saturate(140%);
+      border: 1px solid rgba(255,255,255,0.12);
+      background: rgba(255,255,255,0.06);
+      color: var(--white);
+      transition: all 0.3s ease;
+    }
+    .tag:hover { background: rgba(76,175,80,0.2); border-color: var(--mint); transform: translateY(-2px); }
+    .tag-dot { width: 6px; height: 6px; border-radius: 50%; }
+
+    /* CTA Button */
+    .cta-btn {
+      display: inline-flex; align-items: center; gap: 0.6rem;
+      padding: 0.9rem 2.2rem;
+      border-radius: 999px;
+      font-family: 'Poppins', sans-serif;
+      font-size: 1rem; font-weight: 600;
+      letter-spacing: 0.03em;
+      text-decoration: none;
+      color: #fff;
+      background: linear-gradient(135deg, var(--mint) 0%, var(--steel) 100%);
+      box-shadow: 0 0 30px rgba(76,175,80,0.35), 0 4px 20px rgba(0,0,0,0.3);
+      border: 1px solid rgba(255,255,255,0.15);
+      backdrop-filter: blur(8px);
+      transition: all 0.35s cubic-bezier(0.25, 0.8, 0.25, 1);
+      position: relative; overflow: hidden;
+    }
+    .cta-btn::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: linear-gradient(135deg, var(--sky) 0%, var(--mint) 100%);
+      opacity: 0; transition: opacity 0.35s ease;
+      border-radius: inherit;
+    }
+    .cta-btn:hover::before { opacity: 1; }
+    .cta-btn:hover { transform: translateY(-3px) scale(1.03); box-shadow: 0 0 50px rgba(76,175,80,0.5), 0 8px 30px rgba(0,0,0,0.4); }
+    .cta-btn span { position: relative; z-index: 1; }
+    .cta-arrow { position: relative; z-index: 1; font-size: 1.2rem; }
+
+    /* Stats strip */
+    .stats {
+      display: flex; gap: 2.5rem;
+      margin-top: 3rem;
+      flex-wrap: wrap; justify-content: center;
+    }
+    .stat {
+      display: flex; flex-direction: column; align-items: center;
+      gap: 4px;
+      padding: 0.8rem 1.2rem;
+      border-radius: 12px;
+      backdrop-filter: blur(12px) saturate(120%);
+      -webkit-backdrop-filter: blur(12px) saturate(120%);
+      background: rgba(255,255,255,0.04);
+      border: 1px solid rgba(255,255,255,0.08);
+      transition: all 0.3s ease;
+    }
+    .stat:hover { background: rgba(76,175,80,0.1); border-color: rgba(76,175,80,0.3); transform: translateY(-4px); }
+    .stat-value {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.6rem; font-weight: 900;
+      background: linear-gradient(135deg, var(--mint), var(--sky));
+      -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    }
+    .stat-label {
+      font-size: 0.7rem; font-weight: 500;
+      color: rgba(240,244,248,0.6);
+      letter-spacing: 0.08em; text-transform: uppercase;
+    }
+
+    /* Engineering corner marks */
+    .corner {
+      position: fixed; width: 40px; height: 40px;
+      border-color: rgba(76,175,80,0.4);
+      border-style: solid;
+    }
+    .corner-tl { top: 20px; left: 20px; border-width: 2px 0 0 2px; }
+    .corner-tr { top: 20px; right: 20px; border-width: 2px 2px 0 0; }
+    .corner-bl { bottom: 20px; left: 20px; border-width: 0 0 2px 2px; }
+    .corner-br { bottom: 20px; right: 20px; border-width: 0 2px 2px 0; }
+
+    /* Scroll-redirect after 5s */
+    .redirect-bar {
+      position: fixed; bottom: 30px; left: 50%; transform: translateX(-50%);
+      display: flex; flex-direction: column; align-items: center; gap: 8px;
+      z-index: 20;
+    }
+    .redirect-label {
+      font-size: 0.65rem; letter-spacing: 0.2em; color: rgba(240,244,248,0.4);
+      text-transform: uppercase;
+    }
+    .redirect-progress {
+      width: 160px; height: 2px;
+      background: rgba(255,255,255,0.1);
+      border-radius: 1px; overflow: hidden;
+    }
+    .redirect-fill {
+      height: 100%;
+      background: linear-gradient(90deg, var(--mint), var(--sky));
+      border-radius: 1px;
+      width: 0%;
+      animation: fill 4s linear 1s forwards;
+    }
+    @keyframes fill { to { width: 100%; } }
+
+    /* Pulse scanner line */
+    .scanner {
+      position: fixed; top: 0; left: 0; right: 0; height: 2px;
+      background: linear-gradient(90deg, transparent 0%, var(--mint) 50%, transparent 100%);
+      opacity: 0.5; z-index: 5;
+      animation: scan 5s ease-in-out infinite;
+    }
+    @keyframes scan {
+      0%, 100% { transform: translateY(0); opacity: 0; }
+      10%       { opacity: 0.6; }
+      90%       { opacity: 0.3; }
+      50%       { transform: translateY(100vh); }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Background layers -->
+  <div class="grid-bg"></div>
+  <div class="blob blob-1"></div>
+  <div class="blob blob-2"></div>
+  <div class="blob blob-3"></div>
+  <div class="scanner"></div>
+
+  <!-- Floating particles -->
+  <div class="particles" id="particles"></div>
+
+  <!-- Engineering corner marks -->
+  <div class="corner corner-tl"></div>
+  <div class="corner corner-tr"></div>
+  <div class="corner corner-bl"></div>
+  <div class="corner corner-br"></div>
+
+  <!-- Main hero -->
+  <main class="hero">
+
+    <div class="accent-bar">
+      <div class="accent-bar-line"></div>
+      <span class="accent-bar-text">Civil Engineering Portfolio</span>
+      <div class="accent-bar-line right"></div>
+    </div>
+
+    <!-- Portrait with spinning ring -->
+    <div class="portrait-ring">
+      <img
+        src="/Portfolio/images/hasni.jpg"
+        alt="Hasni Ahamed"
+        class="portrait-img"
+        onerror="this.style.display='none'"
+      />
+    </div>
+
+    <h1 class="name">Hasni Ahamed</h1>
+    <p class="title">Civil Engineering Undergraduate · KDU Sri Lanka</p>
+
+    <!-- Discipline tags -->
+    <div class="tags">
+      <span class="tag"><span class="tag-dot" style="background:#4caf50"></span>Structural Engineering</span>
+      <span class="tag"><span class="tag-dot" style="background:#81c3d7"></span>Hydrology & Groundwater</span>
+      <span class="tag"><span class="tag-dot" style="background:#f4b942"></span>Transportation Engineering</span>
+      <span class="tag"><span class="tag-dot" style="background:#a78bfa"></span>Geotechnical Research</span>
+      <span class="tag"><span class="tag-dot" style="background:#f87171"></span>Surveying & GIS</span>
+      <span class="tag"><span class="tag-dot" style="background:#38bdf8"></span>ETABS · SAP2000 · Civil 3D</span>
+    </div>
+
+    <!-- CTA -->
+    <a href="/Portfolio/" class="cta-btn">
+      <span>Enter Portfolio</span>
+      <span class="cta-arrow">→</span>
+    </a>
+
+    <!-- Stats -->
+    <div class="stats">
+      <div class="stat">
+        <span class="stat-value">17+</span>
+        <span class="stat-label">Certificates</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">4</span>
+        <span class="stat-label">Projects</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">ICE</span>
+        <span class="stat-label">Member UK</span>
+      </div>
+      <div class="stat">
+        <span class="stat-value">KDU</span>
+        <span class="stat-label">University</span>
+      </div>
+    </div>
+
+  </main>
+
+  <!-- Auto-redirect bar -->
+  <div class="redirect-bar">
+    <span class="redirect-label">Auto-redirecting</span>
+    <div class="redirect-progress">
+      <div class="redirect-fill"></div>
+    </div>
+  </div>
+
+  <script>
+    // Generate floating particles
+    const container = document.getElementById('particles');
+    const colors = ['rgba(76,175,80,0.7)', 'rgba(129,195,215,0.6)', 'rgba(244,185,66,0.5)', 'rgba(167,139,250,0.5)'];
+    for (let i = 0; i < 30; i++) {
+      const p = document.createElement('div');
+      p.className = 'particle';
+      const size = Math.random() * 5 + 2;
+      p.style.cssText = `
+        width: ${size}px; height: ${size}px;
+        left: ${Math.random() * 100}%;
+        animation-duration: ${Math.random() * 12 + 8}s;
+        animation-delay: ${Math.random() * 10}s;
+        background: ${colors[Math.floor(Math.random() * colors.length)]};
+        filter: blur(${Math.random() < 0.4 ? 1 : 0}px);
+      `;
+      container.appendChild(p);
+    }
+
+    // Auto-redirect after 5 seconds
+    setTimeout(() => {
+      window.location.href = '/Portfolio/';
+    }, 5000);
+  </script>
+
+</body>
+</html>

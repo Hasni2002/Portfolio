@@ -77,28 +77,61 @@ html, body {
 /* Glassmorphism Styles */
 .glass-panel {
   background: var(--card-bg);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
+  backdrop-filter: blur(16px) saturate(120%);
+  -webkit-backdrop-filter: blur(16px) saturate(120%);
   border: 1px solid var(--card-border);
-  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.04);
+  box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.05), inset 0 1px 1px rgba(255, 255, 255, 0.15);
 }
 
 .glass-card {
   background: var(--card-bg);
-  backdrop-filter: blur(8px);
-  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(12px) saturate(110%);
+  -webkit-backdrop-filter: blur(12px) saturate(110%);
   border: 1px solid var(--card-border);
-  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  box-shadow: 0 4px 20px 0 rgba(0, 0, 0, 0.02), inset 0 1px 1px rgba(255, 255, 255, 0.08);
+  transition: all 0.4s cubic-bezier(0.25, 0.8, 0.25, 1);
 }
 
 .glass-card:hover {
   border-color: var(--color-secondary);
-  box-shadow: 0 12px 40px 0 rgba(22, 50, 79, 0.08);
-  transform: translateY(-4px);
+  box-shadow: 0 12px 40px 0 rgba(22, 50, 79, 0.12), inset 0 1px 2px rgba(255, 255, 255, 0.25);
+  transform: translateY(-6px);
 }
 
 .dark .glass-card:hover {
-  box-shadow: 0 12px 40px 0 rgba(76, 175, 80, 0.1);
+  box-shadow: 0 12px 40px 0 rgba(76, 175, 80, 0.15), inset 0 1px 2px rgba(255, 255, 255, 0.1);
+  border-color: var(--color-accent);
+}
+
+/* Liquid Glass Backdrop Keyframe Animations */
+@keyframes fluid-blob-1 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(40px, -60px) scale(1.15); }
+  66% { transform: translate(-30px, 30px) scale(0.9); }
+}
+
+@keyframes fluid-blob-2 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(-50px, 40px) scale(0.85); }
+  66% { transform: translate(40px, -30px) scale(1.15); }
+}
+
+@keyframes fluid-blob-3 {
+  0%, 100% { transform: translate(0, 0) scale(1); }
+  33% { transform: translate(30px, 50px) scale(1.1); }
+  66% { transform: translate(-40px, -40px) scale(0.85); }
+}
+
+.animate-fluid-blob-1 {
+  animation: fluid-blob-1 25s infinite alternate ease-in-out;
+}
+
+.animate-fluid-blob-2 {
+  animation: fluid-blob-2 30s infinite alternate ease-in-out;
+}
+
+.animate-fluid-blob-3 {
+  animation: fluid-blob-3 20s infinite alternate ease-in-out;
 }
 
 /* Hexagonal mask for skill hexagons */

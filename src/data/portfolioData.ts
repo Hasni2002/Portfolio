@@ -302,7 +302,8 @@ export const projectsList: Project[] = [
       "Cross-sectional detailing at 20m intervals."
     ],
     gallery: [
-      "/images/hero.jpeg"
+      "/images/hero.jpeg",
+      "/images/survey_site.jpg"
     ],
     results: "Successfully produced a comprehensive contour map of the 5-hectare area and a detailed, cost-optimized road corridor alignment with a mass-haul diagram showing balanced cut-and-fill allocations.",
     lessonsLearned: [
@@ -313,14 +314,14 @@ export const projectsList: Project[] = [
       "Integrate RTK-GPS systems for faster control point verification.",
       "Utilize drone photogrammetry to build a high-resolution 3D mesh overlay."
     ],
-    reportPdfUrl: "/certificates/SCEL_W1_CERT-160.pdf",
+    reportPdfUrl: "/certificates/CAD_Workshop_Certificate.pdf",
     presentationUrl: "#"
   },
   {
     id: "groundwater-research",
     title: "Groundwater Modeling & Aquifer Simulation",
     category: "Hydrology & Geotechnical Research",
-    heroImage: "/images/hero.jpeg",
+    heroImage: "/images/groundwater.png",
     overview: "Computational research analyzing groundwater flow dynamics and aquifer depletion rates in the northern dry zone of Sri Lanka using finite difference modeling.",
     objectives: [
       "Model hydraulic conductivity distributions in a heterogeneous aquifer.",
@@ -339,7 +340,7 @@ export const projectsList: Project[] = [
       { formula: "T = K \\times D", description: "Aquifer transmissivity calculated from hydraulic conductivity and thickness.", result: "T = 145 m²/day" }
     ],
     softwareUsed: ["MATLAB", "Python", "QGIS", "MS Excel"],
-    gallery: ["/images/hero.jpeg"],
+    gallery: ["/images/groundwater.png"],
     results: "Delineated critical drawdown zones and provided recommendations for maximum sustainable extraction limits, suggesting a 20% reduction in pumping during dry seasons to prevent seawater intrusion.",
     lessonsLearned: [
       "Aquifer heterogeneity complicates deterministic models; stochastic models represent field conditions better.",
@@ -349,14 +350,14 @@ export const projectsList: Project[] = [
       "Expand to a fully integrated MODFLOW model utilizing physical spatial grids.",
       "Integrate IoT-enabled real-time piezometric level sensors for model validation."
     ],
-    reportPdfUrl: "/certificates/Participant 14 - MF. Hasni Ahamed.pdf",
+    reportPdfUrl: "/certificates/MATLAB_Fundamentals_Course.pdf",
     presentationUrl: "#"
   },
   {
     id: "structural-design",
     title: "Seismic Optimization of Multi-Story Concrete Structure",
     category: "Structural Engineering",
-    heroImage: "/images/hero.jpeg",
+    heroImage: "/images/structural.png",
     overview: "Structural design and seismic evaluation of a G+8 residential building conforming to Eurocode 2 and Eurocode 8 design guidelines.",
     objectives: [
       "Create structural frame skeleton configurations using ETABS.",
@@ -376,7 +377,7 @@ export const projectsList: Project[] = [
       { formula: "M_{Ed} \\le M_{Rd}", description: "Eurocode 2 ultimate limit state moment capacity comparison.", result: "M_Rd = 340 kNm > M_Ed = 295 kNm (Safe)" }
     ],
     softwareUsed: ["ETABS", "SAP2000", "AutoCAD", "Revit"],
-    gallery: ["/images/hero.jpeg"],
+    gallery: ["/images/structural.png"],
     results: "Successfully designed structural members complying with structural safety rules. Shear wall optimizations reduced lateral top displacement by 32%, saving 12% in concrete material volumes.",
     lessonsLearned: [
       "Torsional modes of vibration must be avoided early in structural floor planning.",
@@ -386,14 +387,14 @@ export const projectsList: Project[] = [
       "Perform a non-linear push-over analysis to verify structural collapse margins.",
       "Introduce steel-concrete composite sections to reduce column dimensions."
     ],
-    reportPdfUrl: "/certificates/DocScanner 6 Jul 2026 17-49.pdf",
+    reportPdfUrl: "/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf",
     presentationUrl: "#"
   },
   {
     id: "transportation-engineering",
     title: "Highway Intersection & Pavement Design Project",
     category: "Transportation Engineering",
-    heroImage: "/images/hero.jpeg",
+    heroImage: "/images/highway.png",
     overview: "Comprehensive layout planning and structural pavement design for a dual-carriageway collector highway linking industrial zones.",
     objectives: [
       "Estimate cumulative equivalent single axle loads (ESALs) for 20 years.",
@@ -412,7 +413,7 @@ export const projectsList: Project[] = [
       { formula: "SN = a_1 D_1 + a_2 D_2 m_2 + a_3 D_3 m_3", description: "AASHTO structural number equation for layer sizing.", result: "SN = 4.2 (Asphalt = 4\", Base = 6\", Subbase = 8\")" }
     ],
     softwareUsed: ["Civil 3D", "MS Excel", "AutoCAD"],
-    gallery: ["/images/hero.jpeg"],
+    gallery: ["/images/highway.png"],
     results: "Redesigned flexible pavement cross-section and drafted a channelized intersection layout with dedicated left-turn lanes, reducing delay times by 45%.",
     lessonsLearned: [
       "Drainage coefficient parameters drastically affect pavement thickness requirements.",
@@ -422,7 +423,7 @@ export const projectsList: Project[] = [
       "Develop rigid concrete pavement options for high-temperature resistance.",
       "Simulate traffic flow using micro-simulation modeling tools (VISSIM)."
     ],
-    reportPdfUrl: "/certificates/DocScanner 6 Jul 2026 17-51.pdf",
+    reportPdfUrl: "/certificates/Introduction_to_Highway_Design.pdf",
     presentationUrl: "#"
   }
 ];
@@ -434,7 +435,7 @@ export const researchList: ResearchPaper[] = [
     abstract: "This study explores groundwater flow rates through highly variable soil layers using finite difference approximations. By analyzing borehole datasets from Sri Lanka, we mapped vertical hydraulic conductivities and modeled fluid flow patterns. The paper presents drawdown behaviors, aquifer recharging profiles, and evaluates sustainable water usage limits for deep tube-well installations.",
     keywords: ["Groundwater Hydrology", "Aquifer Modeling", "Finite Difference Method", "Geotechnical Characterization", "Sustainable Extraction"],
     researchArea: "Geotechnical Hydrology & Computational Hydraulics",
-    technicalReportUrl: "/certificates/Participant 14 - MF. Hasni Ahamed.pdf",
+    technicalReportUrl: "/certificates/MATLAB_Fundamentals_Course.pdf",
     presentationUrl: "#",
     conferencePaper: "KDU Annual International Research Conference (Under Review)",
     futureScope: [
@@ -449,7 +450,7 @@ export const researchList: ResearchPaper[] = [
     abstract: "High-performance concrete mix optimization requires balancing water-cement ratios, aggregate grading, and fly ash percentages. This paper develops a regression neural network mapping concrete ingredients to compressive strengths. The model achieved a 94% prediction accuracy, representing a faster alternative to traditional 28-day cylinder crushing tests.",
     keywords: ["Concrete Strength", "Predictive Modeling", "Neural Networks", "Sustainable Concrete", "Mix Optimization"],
     researchArea: "Materials Engineering & Artificial Intelligence",
-    technicalReportUrl: "/certificates/DocScanner 6 Jul 2026 17-49.pdf",
+    technicalReportUrl: "/certificates/Concrete_Mix_Design_and_Rheology.pdf",
     presentationUrl: "#",
     conferencePaper: "IESL Student Session (Abstract Accepted)",
     futureScope: [
@@ -507,7 +508,7 @@ export const siteVisitsList: SiteVisit[] = [
     location: "Colombo, Sri Lanka",
     date: "March 2025",
     description: "Inspected ready-mix concrete casting of a thick foundation slab. Observed structural reinforcement spacing, post-tensioning duct layouts, and concrete slump test quality audits.",
-    imageUrl: "/images/hero.jpeg",
+    imageUrl: "/images/visit_building.png",
     category: "construction"
   },
   {
@@ -516,7 +517,7 @@ export const siteVisitsList: SiteVisit[] = [
     location: "Galle-Matara Link, Sri Lanka",
     date: "July 2024",
     description: "Studied roadbed preparation, sub-grade soil compaction, bituminous layer spreading, and embankment slope stabilization utilizing geotextile sheets.",
-    imageUrl: "/images/hero.jpeg",
+    imageUrl: "/images/highway.png",
     category: "construction"
   },
   {
@@ -525,7 +526,7 @@ export const siteVisitsList: SiteVisit[] = [
     location: "Central Province, Sri Lanka",
     date: "November 2024",
     description: "Evaluated anchorage blocks, steel cables rust layers, hanger connection configurations, and checked concrete bridge abutment cracking.",
-    imageUrl: "/images/hero.jpeg",
+    imageUrl: "/images/visit_bridge.png",
     category: "bridge"
   },
   {
@@ -534,7 +535,7 @@ export const siteVisitsList: SiteVisit[] = [
     location: "Labugama Reservoir Area, Sri Lanka",
     date: "February 2025",
     description: "Studied flow hydraulics across aeration basins, coagulant dosing chambers, sedimentation basins, and sand filter beds.",
-    imageUrl: "/images/hero.jpeg",
+    imageUrl: "/images/visit_water.png",
     category: "water"
   },
   {
@@ -543,7 +544,7 @@ export const siteVisitsList: SiteVisit[] = [
     location: "KDU University Laboratories",
     date: "Ongoing",
     description: "Conducted concrete cylinder compression testing, soil triaxial shear testing, permeability modeling, and grain size distributions.",
-    imageUrl: "/images/hero.jpeg",
+    imageUrl: "/images/kdu_lab.jpg",
     category: "laboratory"
   }
 ];
@@ -555,53 +556,53 @@ export const certificationsList: Certification[] = [
     issuer: "Institution of Civil Engineers (ICE), UK",
     date: "2024",
     credentialId: "M-81347209",
-    verificationUrl: "/certificates/93807498-Ahamed,H-Student Membership Letter.pdf",
-    pdfUrl: "/certificates/93807498-Ahamed,H-Student Membership Letter.pdf"
+    verificationUrl: "/certificates/ICE_Student_Membership.pdf",
+    pdfUrl: "/certificates/ICE_Student_Membership.pdf"
   },
   {
     id: "cert-2",
-    title: "Structural Design using SAP2000",
-    issuer: "Structural Engineering Society / Elite Academy",
-    date: "2024",
-    credentialId: "SD-25C09-00003",
-    verificationUrl: "/certificates/SDI-25C09-00003.pdf",
-    pdfUrl: "/certificates/SDI-25C09-00003.pdf"
+    title: "Design of High-rise Buildings (CPD)",
+    issuer: "Structural Design Institute",
+    date: "2025",
+    credentialId: "SDI-25C09-00003",
+    verificationUrl: "/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf",
+    pdfUrl: "/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf"
   },
   {
     id: "cert-3",
-    title: "Advanced Revit Structure for BIM Workflows",
-    issuer: "BIM Training Institute",
+    title: "AI in Construction Technology Webinar",
+    issuer: "Structural Design Institute",
     date: "2025",
-    credentialId: "BIM-RV-9204",
-    verificationUrl: "/certificates/SDI-25W05-00049.pdf",
-    pdfUrl: "/certificates/SDI-25W05-00049.pdf"
+    credentialId: "SDI-25W05-00049",
+    verificationUrl: "/certificates/AI_in_Construction_Technology_Webinar.pdf",
+    pdfUrl: "/certificates/AI_in_Construction_Technology_Webinar.pdf"
   },
   {
     id: "cert-4",
-    title: "AutoCAD Civil 3D for Infrastructure Design",
-    issuer: "Authorized Autodesk Center",
-    date: "2025",
-    credentialId: "C3D-INF-883",
-    verificationUrl: "/certificates/SDI-26W02-00087.pdf",
-    pdfUrl: "/certificates/SDI-26W02-00087.pdf"
+    title: "Precast Housing Solutions Hybrid Technical Talk",
+    issuer: "Structural Design Institute",
+    date: "2026",
+    credentialId: "SDI-26W02-00087",
+    verificationUrl: "/certificates/Precast_Housing_Solutions_Seminar.pdf",
+    pdfUrl: "/certificates/Precast_Housing_Solutions_Seminar.pdf"
   },
   {
     id: "cert-5",
-    title: "Project Management Essentials",
+    title: "Basics of Engineering Management",
     issuer: "Alison Learning",
-    date: "2023",
+    date: "2026",
     credentialId: "AL-5530-52274874",
-    verificationUrl: "/certificates/Alison_Certificate-5530-52274874.pdf",
-    pdfUrl: "/certificates/Alison_Certificate-5530-52274874.pdf"
+    verificationUrl: "/certificates/Basics_of_Engineering_Management.pdf",
+    pdfUrl: "/certificates/Basics_of_Engineering_Management.pdf"
   },
   {
     id: "cert-6",
-    title: "Sustainable Construction Practices",
+    title: "Site Management Safety Training Scheme (SMSTS)",
     issuer: "Alison Learning",
-    date: "2023",
+    date: "2026",
     credentialId: "AL-5758-52274874",
-    verificationUrl: "/certificates/Alison_Certificate-5758-52274874.pdf",
-    pdfUrl: "/certificates/Alison_Certificate-5758-52274874.pdf"
+    verificationUrl: "/certificates/Site_Management_Safety_Training.pdf",
+    pdfUrl: "/certificates/Site_Management_Safety_Training.pdf"
   },
   {
     id: "cert-7",
@@ -609,17 +610,17 @@ export const certificationsList: Certification[] = [
     issuer: "SCEL University",
     date: "2024",
     credentialId: "SCEL-W1-160",
-    verificationUrl: "/certificates/SCEL_W1_CERT-160.pdf",
-    pdfUrl: "/certificates/SCEL_W1_CERT-160.pdf"
+    verificationUrl: "/certificates/Introduction_to_Structural_Mechanics.pdf",
+    pdfUrl: "/certificates/Introduction_to_Structural_Mechanics.pdf"
   },
   {
     id: "cert-8",
-    title: "Sustainable Urban Drainage Systems",
+    title: "Accelerating Manuscript Preparation using AI",
     issuer: "SCEL Webinar Series",
     date: "2024",
     credentialId: "SCEL-WEB-117",
-    verificationUrl: "/certificates/SCEL_WEBINAR_5-117.pdf",
-    pdfUrl: "/certificates/SCEL_WEBINAR_5-117.pdf"
+    verificationUrl: "/certificates/AI_Manuscript_Preparation_Webinar.pdf",
+    pdfUrl: "/certificates/AI_Manuscript_Preparation_Webinar.pdf"
   },
   {
     id: "cert-9",
@@ -627,8 +628,8 @@ export const certificationsList: Certification[] = [
     issuer: "Industrial Webinar Program",
     date: "2024",
     credentialId: "WEB-05-18",
-    verificationUrl: "/certificates/Webinar 05 Certificates-18.pdf",
-    pdfUrl: "/certificates/Webinar 05 Certificates-18.pdf"
+    verificationUrl: "/certificates/Concrete_Mix_Design_and_Rheology.pdf",
+    pdfUrl: "/certificates/Concrete_Mix_Design_and_Rheology.pdf"
   },
   {
     id: "cert-10",
@@ -636,8 +637,71 @@ export const certificationsList: Certification[] = [
     issuer: "National Engineering Council",
     date: "2025",
     credentialId: "NEC-GEO-29",
-    verificationUrl: "/certificates/certificates-29.pdf",
-    pdfUrl: "/certificates/certificates-29.pdf"
+    verificationUrl: "/certificates/Geotechnical_Site_Investigation.pdf",
+    pdfUrl: "/certificates/Geotechnical_Site_Investigation.pdf"
+  },
+  {
+    id: "cert-11",
+    title: "Introduction to Prestressed Concrete",
+    issuer: "Continuous Professional Development Program",
+    date: "2026",
+    credentialId: "CPD-PC-2026",
+    verificationUrl: "/certificates/Introduction_to_Prestressed_Concrete.pdf",
+    pdfUrl: "/certificates/Introduction_to_Prestressed_Concrete.pdf"
+  },
+  {
+    id: "cert-12",
+    title: "Introduction to Highway Design",
+    issuer: "Institution of Civil Engineers - UK (SLAICE)",
+    date: "2025",
+    credentialId: "SLAICE-HD-2025",
+    verificationUrl: "/certificates/Introduction_to_Highway_Design.pdf",
+    pdfUrl: "/certificates/Introduction_to_Highway_Design.pdf"
+  },
+  {
+    id: "cert-13",
+    title: "AutoCAD CAD Workshop Certificate",
+    issuer: "Faculty of Engineering, KDU",
+    date: "2025",
+    credentialId: "KDU-CAD-2025",
+    verificationUrl: "/certificates/CAD_Workshop_Certificate.pdf",
+    pdfUrl: "/certificates/CAD_Workshop_Certificate.pdf"
+  },
+  {
+    id: "cert-14",
+    title: "Floating City Design Workshop",
+    issuer: "Faculty of Engineering, KDU",
+    date: "2025",
+    credentialId: "KDU-FC-2025",
+    verificationUrl: "/certificates/Floating_City_Design_Workshop.pdf",
+    pdfUrl: "/certificates/Floating_City_Design_Workshop.pdf"
+  },
+  {
+    id: "cert-15",
+    title: "Mathematical Society Membership",
+    issuer: "KDU Engineering Mathematical Society",
+    date: "2024",
+    credentialId: "EMS-MEMBER-24",
+    verificationUrl: "/certificates/Mathematical_Society_Membership.pdf",
+    pdfUrl: "/certificates/Mathematical_Society_Membership.pdf"
+  },
+  {
+    id: "cert-16",
+    title: "MATLAB Fundamentals Course Completion",
+    issuer: "MathWorks",
+    date: "2024",
+    credentialId: "MW-MATLAB-102",
+    verificationUrl: "/certificates/MATLAB_Fundamentals_Course.pdf",
+    pdfUrl: "/certificates/MATLAB_Fundamentals_Course.pdf"
+  },
+  {
+    id: "cert-17",
+    title: "WS2_34 Workshop Certificate",
+    issuer: "Faculty of Engineering, KDU",
+    date: "2025",
+    credentialId: "KDU-WS-34",
+    verificationUrl: "/certificates/WS2_34_Workshop_Certificate.pdf",
+    pdfUrl: "/certificates/WS2_34_Workshop_Certificate.pdf"
   }
 ];
 
@@ -666,15 +730,15 @@ export const achievementsList: Achievement[] = [
 ];
 
 export const galleryList: GalleryItem[] = [
-  { id: "g-1", title: "Establishing Traverse Benchmarks", category: "survey", imageUrl: "/images/hero.jpeg" },
-  { id: "g-2", title: "Slump Testing of Foundation Concrete", category: "lab", imageUrl: "/images/hero.jpeg" },
-  { id: "g-3", title: "Aerial Drone Mapping of Survey Site", category: "drone", imageUrl: "/images/hero.jpeg" },
-  { id: "g-4", title: "Concrete Cylinder Compressive Failure Test", category: "lab", imageUrl: "/images/hero.jpeg" },
-  { id: "g-5", title: "Site Inspection: Column Rebar Layouts", category: "construction", imageUrl: "/images/hero.jpeg" },
-  { id: "g-6", title: "Highway Curve Corridor Visuals", category: "infrastructure", imageUrl: "/images/hero.jpeg" },
-  { id: "g-7", title: "Hydrology Catchment Runoff Mapping", category: "research", imageUrl: "/images/hero.jpeg" },
-  { id: "g-8", title: "KDU Engineering Faculty Life", category: "university", imageUrl: "/images/hero.jpeg" },
-  { id: "g-9", title: "Site Visit: Sedimentation Tank Aerators", category: "visits", imageUrl: "/images/hero.jpeg" }
+  { id: "g-1", title: "Establishing Traverse Benchmarks", category: "survey", imageUrl: "/images/survey_site.jpg" },
+  { id: "g-2", title: "Slump Testing of Foundation Concrete", category: "lab", imageUrl: "/images/visit_building.png" },
+  { id: "g-3", title: "Aerial Drone Mapping of Survey Site", category: "drone", imageUrl: "/images/survey_site.jpg" },
+  { id: "g-4", title: "Concrete Cylinder Compressive Failure Test", category: "lab", imageUrl: "/images/kdu_lab.jpg" },
+  { id: "g-5", title: "Site Inspection: Column Rebar Layouts", category: "construction", imageUrl: "/images/visit_building.png" },
+  { id: "g-6", title: "Highway Curve Corridor Visuals", category: "infrastructure", imageUrl: "/images/highway.png" },
+  { id: "g-7", title: "Hydrology Catchment Runoff Mapping", category: "research", imageUrl: "/images/groundwater.png" },
+  { id: "g-8", title: "KDU Engineering Faculty Life", category: "university", imageUrl: "/images/kdu_lab.jpg" },
+  { id: "g-9", title: "Site Visit: Sedimentation Tank Aerators", category: "visits", imageUrl: "/images/visit_water.png" }
 ];
 
 export const blogPosts: BlogPost[] = [

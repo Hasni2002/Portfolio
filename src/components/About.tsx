@@ -58,7 +58,7 @@ export default function About() {
               {/* Portrait image container */}
               <div className="relative w-full h-full rounded overflow-hidden bg-primary/10">
                 <img
-                  src="/certificates/Hasini Ahamed.png"
+                  src="/images/hasni.jpg"
                   alt="Hasni Ahamed Portrait"
                   className="w-full h-full object-cover filter grayscale hover:grayscale-0 transition-all duration-750"
                   onError={(e) => {

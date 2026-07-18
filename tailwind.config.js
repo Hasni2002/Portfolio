@@ -8,18 +8,18 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "var(--color-background)",
-        surface: "var(--color-surface)",
-        text: "var(--color-text)",
+        background: "rgb(var(--color-background) / <alpha-value>)",
+        surface: "rgb(var(--color-surface) / <alpha-value>)",
+        text: "rgb(var(--color-text) / <alpha-value>)",
         accent: {
-          light: "var(--color-accent-light)",
-          DEFAULT: "var(--color-accent)",
-          dark: "var(--color-accent-dark)",
+          light: "rgb(var(--color-accent-light) / <alpha-value>)",
+          DEFAULT: "rgb(var(--color-accent) / <alpha-value>)",
+          dark: "rgb(var(--color-accent-dark) / <alpha-value>)",
         },
         purple: {
-          light: "var(--color-purple-light)",
-          DEFAULT: "var(--color-purple)",
-          dark: "var(--color-purple-dark)",
+          light: "rgb(var(--color-purple-light) / <alpha-value>)",
+          DEFAULT: "rgb(var(--color-purple) / <alpha-value>)",
+          dark: "rgb(var(--color-purple-dark) / <alpha-value>)",
         }
       },
       fontFamily: {
@@ -55,3 +55,4 @@ export default {
   },
   plugins: [],
 }
+

@@ -1,126 +1,62 @@
-"use client";
+import React from 'react';
+import { portfolioData } from '../data/portfolioData';
+import { Heart } from 'lucide-react';
+import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { Link } from 'react-scroll';
 
-import React from "react";
-import { Send } from "lucide-react";
-
-interface FooterProps {
-  onScrollToSection: (id: string) => void;
-}
-
-export default function Footer({ onScrollToSection }: FooterProps) {
-  const handleScroll = (id: string) => {
-    onScrollToSection(id);
-  };
+const Footer: React.FC = () => {
+  const currentYear = new Date().getFullYear();
 
   return (
-    <footer className="relative bg-[#0B192C] text-[#F1F5F9] pt-20 pb-8 overflow-hidden border-t border-card-border/10">
+    <footer className="bg-surface/80 border-t border-white/5 pt-16 pb-8 relative overflow-hidden">
+      <div className="absolute top-0 inset-x-0 h-px bg-gradient-to-r from-transparent via-accent/50 to-transparent"></div>
       
-      {/* Animated City Skyline & Suspension Bridge Vector Overlay */}
-      <div className="absolute bottom-0 left-0 right-0 h-40 pointer-events-none opacity-10 select-none z-0">
-        <svg
-          className="w-full h-full text-secondary"
-          viewBox="0 0 1000 150"
-          preserveAspectRatio="none"
-          fill="none"
-          stroke="currentColor"
-          strokeWidth="1.5"
-        >
-          {/* Skyline Buildings */}
-          <path d="M 0,150 L 0,120 L 25,120 L 25,150 L 40,150 L 40,80 L 75,80 L 75,150 L 90,150 L 90,100 L 130,100 L 130,150 L 150,150 L 150,60 L 190,60 L 190,150 L 210,150 L 210,110 L 240,110 L 240,150 L 270,150" />
-          
-          {/* Suspension Bridge Silhouette */}
-          <path d="M 270,150 L 270,140 M 350,150 L 350,70 M 650,150 L 650,70 M 730,150 L 730,140" />
-          {/* Main Cables */}
-          <path d="M 270,140 Q 350,70 500,125 Q 650,70 730,140" />
-          {/* Deck */}
-          <path d="M 250,140 L 750,140" />
-          {/* Hangers */}
-          <path d="M 390,140 L 390,102 M 430,140 L 430,113 M 470,140 L 470,121 M 530,140 L 530,121 M 570,140 L 570,113 M 610,140 L 610,102" />
-
-          {/* Right side skyline */}
-          <path d="M 750,150 L 750,90 L 790,90 L 790,150 L 810,150 L 810,115 L 850,115 L 850,150 L 870,150 L 870,70 L 910,70 L 910,150 L 940,150 L 940,110 L 980,110 L 980,150 L 1000,150" />
-        </svg>
-      </div>
-
-      <div className="container mx-auto px-6 relative z-10 grid grid-cols-1 md:grid-cols-12 gap-12 items-start mb-16">
-        
-        {/* Left column: Branding & Quote */}
-        <div className="md:col-span-5 space-y-4">
-          <div 
-            onClick={() => handleScroll("home")}
-            className="flex items-center gap-2 cursor-pointer select-none w-fit"
-          >
-            <div className="w-8 h-8 rounded border border-secondary flex items-center justify-center font-montserrat font-extrabold text-sm text-white">
-              HA
-            </div>
-            <span className="text-sm font-montserrat font-black tracking-wider text-white">HASNI AHAMED</span>
+      <div className="container mx-auto px-6 md:px-12">
+        <div className="flex flex-col md:flex-row justify-between items-center mb-12">
+          <div className="mb-6 md:mb-0 text-center md:text-left">
+            <Link to="home" smooth={true} duration={500} className="cursor-pointer inline-block mb-4">
+              <div className="text-2xl font-bold tracking-tighter">
+                <span className="text-white">Shimsy</span>
+                <span className="text-gradient">.</span>
+              </div>
+            </Link>
+            <p className="text-slate-400 max-w-sm">
+              Building scalable web applications and intelligent data solutions with a focus on modern design.
+            </p>
           </div>
-
-          <p className="text-xs md:text-sm font-mono text-secondary max-w-sm italic">
-            &ldquo;Engineering is the art of transforming ideas into resilient and sustainable infrastructure.&rdquo;
-          </p>
-
-          <p className="text-[10px] font-mono text-[#4E6E81]">
-            General Sir John Kotelawala Defence University, Sri Lanka.
-          </p>
-        </div>
-
-        {/* Center column: Shortcuts */}
-        <div className="md:col-span-4 space-y-4">
-          <h4 className="text-xs font-mono font-bold tracking-widest text-[#4CAF50] uppercase">
-            QUICK NAVIGATION
-          </h4>
-          <div className="grid grid-cols-2 gap-x-4 gap-y-2 font-poppins text-xs">
-            <button onClick={() => handleScroll("home")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; Home</button>
-            <button onClick={() => handleScroll("about")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; About</button>
-            <button onClick={() => handleScroll("education")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; Education</button>
-            <button onClick={() => handleScroll("skills")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; Skills</button>
-            <button onClick={() => handleScroll("projects")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; Projects</button>
-            <button onClick={() => handleScroll("research")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; Research</button>
-            <button onClick={() => handleScroll("experience")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; Experience</button>
-            <button onClick={() => handleScroll("certifications")} className="text-left text-foreground/80 hover:text-white transition-colors cursor-pointer">&bull; Certs</button>
-          </div>
-        </div>
-
-        {/* Right column: Newsletter */}
-        <div className="md:col-span-3 space-y-4">
-          <h4 className="text-xs font-mono font-bold tracking-widest text-[#4CAF50] uppercase">
-            TRANSMITTAL NEWSLETTER
-          </h4>
-          <p className="text-[11px] font-mono text-secondary">
-            Subscribe to receive structural research logs and survey field updates.
-          </p>
           
-          <form onSubmit={(e) => e.preventDefault()} className="flex items-center gap-1">
-            <input
-              type="email"
-              placeholder="Enter email address..."
-              required
-              className="flex-1 px-3 py-2 rounded bg-white/5 border border-card-border text-xs font-mono placeholder:text-secondary focus:outline-none focus:border-secondary text-white"
-            />
-            <button 
-              type="submit" 
-              className="p-2 rounded bg-accent hover:bg-accent/90 text-white transition-colors cursor-pointer"
-              aria-label="Subscribe"
+          <div className="flex gap-4">
+            <a 
+              href={portfolioData.personal.github} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-white/10 transition-all"
             >
-              <Send className="w-4.5 h-4.5" />
-            </button>
-          </form>
+              <FaGithub size={18} />
+            </a>
+            <a 
+              href={portfolioData.personal.linkedin} 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="w-10 h-10 rounded-full bg-white/5 border border-white/10 flex items-center justify-center text-slate-300 hover:text-white hover:bg-[#0077b5] hover:border-[#0077b5] transition-all"
+            >
+              <FaLinkedin size={18} />
+            </a>
+          </div>
         </div>
-
+        
+        <div className="flex flex-col md:flex-row justify-between items-center pt-8 border-t border-white/10 text-slate-500 text-sm">
+          <p className="mb-4 md:mb-0 text-center md:text-left">
+            &copy; {currentYear} {portfolioData.personal.name}. All rights reserved.
+          </p>
+          
+          <p className="flex items-center gap-1.5">
+            Designed & Built with <Heart size={14} className="text-rose-500" />
+          </p>
+        </div>
       </div>
-
-      {/* Copyright notes */}
-      <div className="container mx-auto px-6 pt-8 border-t border-card-border/10 flex flex-col md:flex-row items-center justify-between gap-4 relative z-10 text-[10px] font-mono text-secondary">
-        <div>
-          &copy; {new Date().getFullYear()} HASNI AHAMED. All Rights Reserved.
-        </div>
-        <div className="flex gap-4">
-          <span>SRI LANKA WGS-84 GRID</span>
-          <span>COMPLIANT ACCESSIBILITY</span>
-        </div>
-      </div>
-
     </footer>
   );
-}
+};
+
+export default Footer;

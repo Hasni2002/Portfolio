@@ -70,7 +70,7 @@ const Hero: React.FC = () => {
               </button>
             </Link>
 
-            <a href="/cv.pdf" download className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-white border border-purple/30 bg-purple/10 hover:bg-purple/20 transition-all">
+            <a href="/Hasni_CV.pdf" download className="flex items-center gap-2 px-6 py-3 rounded-xl font-medium text-white border border-purple/30 bg-purple/10 hover:bg-purple/20 transition-all">
               <Download size={18} /> Download CV
             </a>
           </motion.div>

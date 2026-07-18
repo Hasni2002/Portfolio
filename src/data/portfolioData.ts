@@ -19,7 +19,7 @@ export const portfolioData: PortfolioData = {
       degree: "BSc (Hons) in Engineering in Civil Engineering",
       institution: "General Sir John Kotelawala Defence University, Sri Lanka",
       period: "2024 - Present",
-      description: "Dean's List / Highly Competitive Performance. Key modules include Structural Analysis, Reinforced Concrete Design, Soil Mechanics & Geotechnical Engineering, Hydraulics & Hydrology, Highway & Transportation Engineering, Environmental Engineering, and Computational Methods & FEA."
+      description: "Key modules include Structural Analysis, Reinforced Concrete Design, Soil Mechanics & Geotechnical Engineering, Hydraulics & Hydrology, Highway & Transportation Engineering, Environmental Engineering, and Computational Methods & FEA."
     },
     {
       id: "edu-2",

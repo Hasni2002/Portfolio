@@ -1,4 +1,5 @@
 import type { PortfolioData } from '../types';
+import profileImg from '../assets/images/profile.png';
 
 export const portfolioData: PortfolioData = {
   personal: {
@@ -9,7 +10,7 @@ export const portfolioData: PortfolioData = {
     email: "hasni@example.com",
     github: "https://github.com/Hasni2002",
     linkedin: "https://www.linkedin.com/in/hasniahamed",
-    profileImage: "/Portfolio/images/profile.png",
+    profileImage: profileImg,
   },
   education: [
     {

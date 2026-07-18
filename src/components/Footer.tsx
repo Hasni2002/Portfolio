@@ -1,6 +1,5 @@
 import React from 'react';
 import { portfolioData } from '../data/portfolioData';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 
 const Footer: React.FC = () => {
@@ -15,32 +14,13 @@ const Footer: React.FC = () => {
           <div className="mb-6 md:mb-0 text-center md:text-left">
             <Link to="home" smooth={true} duration={500} className="cursor-pointer inline-block mb-4">
               <div className="text-2xl font-bold tracking-tighter">
-                <span className="text-slate-900 dark:text-white">Hasni</span>
+                <span className="text-slate-900 dark:text-white">HasBro</span>
                 <span className="text-gradient">.</span>
               </div>
             </Link>
             <p className="text-slate-600 dark:text-slate-400 max-w-sm">
-              Building scalable web applications and intelligent data solutions with a focus on modern design.
+              "Engineering resilient infrastructure and sustainable communities for a better tomorrow."
             </p>
-          </div>
-          
-          <div className="flex gap-4">
-            <a 
-              href={portfolioData.personal.github} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="w-10 h-10 rounded-full bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:text-white hover:bg-slate-900/10 dark:bg-white/10 transition-all"
-            >
-              <FaGithub size={18} />
-            </a>
-            <a 
-              href={portfolioData.personal.linkedin} 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="w-10 h-10 rounded-full bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 flex items-center justify-center text-slate-700 dark:text-slate-300 hover:text-slate-900 dark:text-white hover:bg-[#0077b5] hover:border-[#0077b5] transition-all"
-            >
-              <FaLinkedin size={18} />
-            </a>
           </div>
         </div>
         
@@ -50,7 +30,7 @@ const Footer: React.FC = () => {
           </p>
           
           <p className="flex items-center gap-1.5">
-            Designed and Built with Sirius Intelligence
+            Designed & Built with Sirius Intelligence.
           </p>
         </div>
       </div>

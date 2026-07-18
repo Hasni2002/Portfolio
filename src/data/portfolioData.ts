@@ -222,7 +222,15 @@ export const portfolioData: PortfolioData = {
         { formula: "SN = a₁D₁ + a₂D₂m₂ + a₃D₃m₃", description: "AASHTO structural number equation for layer sizing.", result: "SN = 4.2 (Asphalt = 4\", Base = 6\", Subbase = 8\")" }
       ],
       techStack: ["Civil 3D", "MS Excel", "AutoCAD"],
-      gallery: ["/Portfolio/images/highway.png"],
+      gallery: [
+        "/Portfolio/images/highway.png",
+        "/Portfolio/projects/highway-design/images/WhatsApp Image 2026-07-18 at 12.07.53 PM (1).jpeg",
+        "/Portfolio/projects/highway-design/images/WhatsApp Image 2026-07-18 at 12.07.53 PM (2).jpeg",
+        "/Portfolio/projects/highway-design/images/WhatsApp Image 2026-07-18 at 12.07.53 PM.jpeg",
+        "/Portfolio/projects/highway-design/images/WhatsApp Image 2026-07-18 at 12.07.54 PM (1).jpeg",
+        "/Portfolio/projects/highway-design/images/WhatsApp Image 2026-07-18 at 12.07.54 PM (2).jpeg",
+        "/Portfolio/projects/highway-design/images/WhatsApp Image 2026-07-18 at 12.07.54 PM.jpeg"
+      ],
       results: "Redesigned flexible pavement cross-section and drafted a channelized intersection layout with dedicated left-turn lanes, reducing delay times by 45%.",
       lessonsLearned: [
         "Drainage coefficient parameters drastically affect pavement thickness requirements.",
@@ -234,7 +242,10 @@ export const portfolioData: PortfolioData = {
       ],
       imageUrl: "/Portfolio/images/highway.png",
       githubUrl: "https://github.com/Hasni2002",
-      reportPdfUrl: "/Portfolio/certificates/Introduction_to_Highway_Design.pdf"
+      reportPdfUrl: "/Portfolio/certificates/Introduction_to_Highway_Design.pdf",
+      documents: [
+        { title: "HDP Group 3", url: "/Portfolio/projects/highway-design/documents/HDP Group 3.pdf" }
+      ]
     }
   ],
   research: [

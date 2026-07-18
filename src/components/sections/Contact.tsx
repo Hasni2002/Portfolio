@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../../data/portfolioData';
 import { Mail, Send, MessageSquare } from 'lucide-react';
-import { FaGithub, FaLinkedin } from 'react-icons/fa';
+import { FaGithub, FaLinkedin, FaWhatsapp } from 'react-icons/fa';
 import { collection, addDoc, serverTimestamp } from 'firebase/firestore';
 import { db } from '../../firebase';
 const Contact: React.FC = () => {
@@ -89,6 +89,18 @@ const Contact: React.FC = () => {
                   <p className="text-lg font-medium group-hover:text-accent transition-colors">{portfolioData.personal.email}</p>
                 </div>
               </a>
+
+              {portfolioData.personal.phone && (
+                <a href={`https://wa.me/${portfolioData.personal.phone.replace(/[^0-9]/g, '')}`} target="_blank" rel="noopener noreferrer" className="flex items-center gap-4 group mt-6">
+                  <div className="w-14 h-14 bg-surface border border-white/10 rounded-full flex items-center justify-center text-accent group-hover:bg-[#25D366] group-hover:border-[#25D366] group-hover:text-white transition-all duration-300 shadow-[0_0_15px_rgba(37,211,102,0)] group-hover:shadow-[0_0_15px_rgba(37,211,102,0.3)]">
+                    <FaWhatsapp size={28} />
+                  </div>
+                  <div>
+                    <p className="text-sm text-slate-500 font-medium">WhatsApp Me</p>
+                    <p className="text-lg font-medium group-hover:text-[#25D366] transition-colors">{portfolioData.personal.phone}</p>
+                  </div>
+                </a>
+              )}
 
               <div className="pt-8 border-t border-white/10">
                 <p className="text-sm text-slate-500 font-medium mb-4">Connect on Socials</p>

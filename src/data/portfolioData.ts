@@ -4,10 +4,11 @@ import profileImg from '../assets/images/profile.png';
 export const portfolioData: PortfolioData = {
   personal: {
     name: "HASNI AHAMED",
-    role: "Civil Engineering Undergraduate",
+    role: "Civil Engineer Intern",
     tagline: "Designing resilient infrastructure. Building sustainable communities. Engineering tomorrow.",
-    bio: "I am a highly driven Civil Engineering undergraduate at General Sir John Kotelawala Defence University, seeking opportunities in structural and geotechnical design to utilize my computational modeling, FEM, and project management skills in global consultancy environments. My mission is to apply computational mechanics and sustainable design principles to engineer resilient infrastructure that harmonizes with the environment and empowers local communities.",
-    email: "hasni@example.com",
+    bio: "Motivated and detail-oriented Civil Engineering undergraduate at General Sir John Kotelawala Defence University, with hands-on exposure to structural analysis, surveying, and design software gained through academic projects and competitions. Possesses a solid foundation in engineering principles, complemented by strong analytical, problem-solving and teamwork skills developed through active participation in professional societies and extracurricular activities. Eager to secure an internship placement to apply theoretical knowledge to practical engineering challenges while contributing positively to a professional engineering environment.",
+    email: "swrd119@gmail.com",
+    phone: "+94 741860010",
     github: "https://github.com/Hasni2002",
     linkedin: "https://www.linkedin.com/in/hasniahamed",
     profileImage: profileImg,
@@ -17,7 +18,7 @@ export const portfolioData: PortfolioData = {
       id: "edu-1",
       degree: "BSc (Hons) in Engineering in Civil Engineering",
       institution: "General Sir John Kotelawala Defence University, Sri Lanka",
-      period: "2022 - Present",
+      period: "2024 - Present",
       description: "Dean's List / Highly Competitive Performance. Key modules include Structural Analysis, Reinforced Concrete Design, Soil Mechanics & Geotechnical Engineering, Hydraulics & Hydrology, Highway & Transportation Engineering, Environmental Engineering, and Computational Methods & FEA."
     },
     {
@@ -30,29 +31,27 @@ export const portfolioData: PortfolioData = {
   ],
   skills: [
     {
-      title: "Core Engineering",
+      title: "Technical Competencies",
       skills: [
-        { name: "Structural Engineering", level: 85 },
-        { name: "Transportation Engineering", level: 75 },
-        { name: "Environmental Engineering", level: 80 },
-        { name: "Construction Management", level: 82 },
-        { name: "Surveying", level: 90 },
-        { name: "Hydrology", level: 78 },
-        { name: "Geotechnical Engineering", level: 80 },
-        { name: "Finite Element Analysis", level: 83 }
+        { name: "AutoCAD", level: 90 },
+        { name: "SolidWorks", level: 85 },
+        { name: "LaTeX", level: 80 },
+        { name: "MATLAB", level: 85 },
+        { name: "SAP2000", level: 80 },
+        { name: "ABAQUS", level: 75 },
+        { name: "Python", level: 85 },
+        { name: "MS Excel & MS Office", level: 95 }
       ]
     },
     {
-      title: "Software Skills",
+      title: "Personal Skills",
       skills: [
-        { name: "AutoCAD", level: 95 },
-        { name: "Civil 3D", level: 85 },
-        { name: "Revit", level: 80 },
-        { name: "SAP2000", level: 85 },
-        { name: "ETABS", level: 82 },
-        { name: "MATLAB", level: 78 },
-        { name: "Python", level: 80 },
-        { name: "QGIS", level: 75 }
+        { name: "Presentation & Reporting", level: 90 },
+        { name: "Decision Making & Adaptability", level: 90 },
+        { name: "Problem Solving & Teamwork", level: 95 },
+        { name: "Leadership & Analytical Thinking", level: 90 },
+        { name: "Emotional Intelligence", level: 85 },
+        { name: "Critical Thinking", level: 85 }
       ]
     }
   ],
@@ -284,27 +283,27 @@ export const portfolioData: PortfolioData = {
     },
     {
       id: "exp-2",
-      role: "Student Member & Coordinator",
-      organization: "Institution of Civil Engineers (ICE) Sri Lanka Student Chapter",
-      period: "2023 - Present",
+      role: "Student Member",
+      organization: "ASCE, ICE (UK), IStructE",
+      period: "Present",
       description: [
-        "Coordinated student technical workshops, inviting guest speakers from global design consultancies.",
-        "Managed digital publications, creating newsletters summarizing civil engineering research trends.",
-        "Participated in inter-university mock design challenges, showcasing structural concepts."
+        "Student Member, American Society of Civil Engineers (ASCE)",
+        "Student Member, Institution of Civil Engineers (ICE), UK",
+        "Student Member, Institution of Structural Engineers (IStructE)"
       ],
       category: "leadership"
     },
     {
       id: "exp-3",
-      role: "Participant - Civil Survey Camp",
-      organization: "Faculty of Engineering, KDU",
-      period: "2024",
+      role: "Executive Member & Volunteer",
+      organization: "KDU Societies & SEDS",
+      period: "Present",
       description: [
-        "Led a 6-member group in topographic surveys, establishing benchmark control loops and traversing profiles.",
-        "Computed leveling calculations and traverse corrections.",
-        "Designed a complete road stretch alignment using Civil 3D."
+        "Executive Member, Mathematical Society of KDU (2025)",
+        "Member of Highway Engineering Society, Civil Engineering Society, Engineering Student Society",
+        "Volunteer Member, Students for the Exploration and Development of Space (SEDS)"
       ],
-      category: "training"
+      category: "volunteer"
     }
   ],
   siteVisits: [
@@ -346,22 +345,22 @@ export const portfolioData: PortfolioData = {
     }
   ],
   certificates: [
-    { id: "cert-1", title: "Student Membership Confirmation", issuer: "Institution of Civil Engineers (ICE), UK", date: "2024", url: "/Portfolio/certificates/ICE_Student_Membership.pdf" },
-    { id: "cert-2", title: "Design of High-rise Buildings (CPD)", issuer: "Structural Design Institute", date: "2025", url: "/Portfolio/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf" },
-    { id: "cert-3", title: "AI in Construction Technology Webinar", issuer: "Structural Design Institute", date: "2025", url: "/Portfolio/certificates/AI_in_Construction_Technology_Webinar.pdf" },
-    { id: "cert-4", title: "Precast Housing Solutions Hybrid Technical Talk", issuer: "Structural Design Institute", date: "2026", url: "/Portfolio/certificates/Precast_Housing_Solutions_Seminar.pdf" },
-    { id: "cert-5", title: "Basics of Engineering Management", issuer: "Alison Learning", date: "2026", url: "/Portfolio/certificates/Basics_of_Engineering_Management.pdf" },
-    { id: "cert-6", title: "Site Management Safety Training Scheme (SMSTS)", issuer: "Alison Learning", date: "2026", url: "/Portfolio/certificates/Site_Management_Safety_Training.pdf" },
-    { id: "cert-7", title: "Introduction to Structural Mechanics", issuer: "SCEL University", date: "2024", url: "/Portfolio/certificates/Introduction_to_Structural_Mechanics.pdf" },
-    { id: "cert-8", title: "Accelerating Manuscript Preparation using AI", issuer: "SCEL Webinar Series", date: "2024", url: "/Portfolio/certificates/AI_Manuscript_Preparation_Webinar.pdf" },
-    { id: "cert-9", title: "Concrete Mix Design & Rheology", issuer: "Industrial Webinar Program", date: "2024", url: "/Portfolio/certificates/Concrete_Mix_Design_and_Rheology.pdf" },
-    { id: "cert-10", title: "Geotechnical Site Investigation Certificate", issuer: "National Engineering Council", date: "2025", url: "/Portfolio/certificates/Geotechnical_Site_Investigation.pdf" },
-    { id: "cert-11", title: "Introduction to Prestressed Concrete", issuer: "Continuous Professional Development Program", date: "2026", url: "/Portfolio/certificates/Introduction_to_Prestressed_Concrete.pdf" },
-    { id: "cert-12", title: "Introduction to Highway Design", issuer: "Institution of Civil Engineers - UK (SLAICE)", date: "2025", url: "/Portfolio/certificates/Introduction_to_Highway_Design.pdf" },
-    { id: "cert-13", title: "AutoCAD CAD Workshop Certificate", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/Portfolio/certificates/CAD_Workshop_Certificate.pdf" },
-    { id: "cert-14", title: "Floating City Design Workshop", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/Portfolio/certificates/Floating_City_Design_Workshop.pdf" },
-    { id: "cert-15", title: "Mathematical Society Membership", issuer: "KDU Engineering Mathematical Society", date: "2024", url: "/Portfolio/certificates/Mathematical_Society_Membership.pdf" },
-    { id: "cert-16", title: "MATLAB Fundamentals Course Completion", issuer: "MathWorks", date: "2024", url: "/Portfolio/certificates/MATLAB_Fundamentals_Course.pdf" },
-    { id: "cert-17", title: "WS2_34 Workshop Certificate", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/Portfolio/certificates/WS2_34_Workshop_Certificate.pdf" }
+    { id: "cert-1", title: "AutoCAD Workshop", issuer: "Highway Engineering Society of KDU", date: "2025" },
+    { id: "cert-2", title: "Floating City Design Competition", issuer: "ASCE Student Chapter of NSBM Green University", date: "2025" },
+    { id: "cert-3", title: "Design of High-Rise Buildings Course", issuer: "Structural Design Institute", date: "2026" },
+    { id: "cert-4", title: "Applied Machine Learning in Civil Engineering", issuer: "University of Moratuwa", date: "2026" },
+    { id: "cert-5", title: "Basics of Engineering Management", issuer: "Alison", date: "2026" },
+    { id: "cert-6", title: "Site Management Safety Training Scheme (SMSTS)", issuer: "Alison", date: "2026" },
+    { id: "cert-7", title: "Fundamental of MATLAB (Self-Paced Training)", issuer: "Math works", date: "2024" },
+    { id: "cert-8", title: "Smarter, Stronger, Greener, AI enabled energy infrastructure", issuer: "gapHQ & Engineers Without Borders", date: "2026" },
+    { id: "cert-9", title: "Behaviour of Ductile Detailing & Implementation Difficulties", issuer: "SSN - ICI Student Chapter (India)", date: "2026" },
+    { id: "cert-10", title: "Introduction to Prestressed concrete design", issuer: "ICE - UK (SLAICE)", date: "2026" },
+    { id: "cert-11", title: "Introduction to Highway design", issuer: "ICE - UK (SLAICE)", date: "2025" },
+    { id: "cert-12", title: "Discover how structures withstand and extremes", issuer: "IAPS SL Chapter & gapHQ", date: "2026" },
+    { id: "cert-13", title: "Accelerating manuscript preparation using AI", issuer: "IAPS SL Chapter & gapHQ", date: "2026" },
+    { id: "cert-14", title: "AI in Construction Technology", issuer: "SDI", date: "2025" },
+    { id: "cert-15", title: "Pre-Cast Housing Solutions – Immediate Response for Disasters", issuer: "SDI", date: "2026" },
+    { id: "cert-16", title: "Humanitarian Engineering, Building a Better World", issuer: "gapHQ & Engineers Without Borders", date: "2026" },
+    { id: "cert-17", title: "Research Into Words; Writing Clear and Effective Abstracts", issuer: "gapHQ & Engineers Without Borders", date: "2026" }
   ]
 };

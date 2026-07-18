@@ -91,6 +91,7 @@ export interface PortfolioData {
     tagline: string;
     bio: string;
     email: string;
+    phone?: string;
     github: string;
     linkedin: string;
     profileImage?: string;

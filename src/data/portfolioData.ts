@@ -300,20 +300,6 @@ export const portfolioData: PortfolioData = {
         "Implement non-linear constitutive soil models to simulate elastoplastic behavior.",
         "Analyze dynamic soil-structure interaction under seismic loading conditions."
       ]
-    },
-    {
-      id: "concrete-optimization",
-      title: "Predicting Compressive Strength of High-Performance Concrete Using Machine Learning",
-      abstract: "High-performance concrete mix optimization requires balancing water-cement ratios, aggregate grading, and fly ash percentages. This paper develops a regression neural network mapping concrete ingredients to compressive strengths. The model achieved a 94% prediction accuracy, representing a faster alternative to traditional 28-day cylinder crushing tests.",
-      keywords: ["Concrete Strength", "Predictive Modeling", "Neural Networks", "Sustainable Concrete", "Mix Optimization"],
-      researchArea: "Materials Engineering & Artificial Intelligence",
-      technicalReportUrl: "/Portfolio/certificates/Concrete_Mix_Design_and_Rheology.pdf",
-      conferencePaper: "IESL Student Session (Abstract Accepted)",
-      futureScope: [
-        "Incorporate chemical admixture interaction variables in the training set.",
-        "Verify model outputs on ultra-high-performance concrete (UHPC) mixtures.",
-        "Develop a desktop GUI for onsite concrete mix adjustments."
-      ]
     }
   ],
   experience: [

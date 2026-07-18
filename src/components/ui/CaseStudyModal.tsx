@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { X, ExternalLink, Calculator, Target, Info, CheckCircle, Layers, BookOpen } from 'lucide-react';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 
 interface CaseStudyModalProps {
   project: Project | null;

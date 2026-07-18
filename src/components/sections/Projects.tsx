@@ -3,7 +3,7 @@ import { motion } from 'framer-motion';
 import { portfolioData } from '../../data/portfolioData';
 import { Briefcase, BookOpen } from 'lucide-react';
 import CaseStudyModal from '../ui/CaseStudyModal';
-import { Project } from '../../types';
+import type { Project } from '../../types';
 
 const Projects: React.FC = () => {
   const [selectedProject, setSelectedProject] = useState<Project | null>(null);

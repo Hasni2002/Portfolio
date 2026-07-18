@@ -288,17 +288,17 @@ export const portfolioData: PortfolioData = {
   ],
   research: [
     {
-      id: "groundwater-dynamics",
-      title: "Computational Analysis of Aquifer Recharge Dynamics in Heterogeneous Geotechnical Profiles",
-      abstract: "This study explores groundwater flow rates through highly variable soil layers using finite difference approximations. By analyzing borehole datasets from Sri Lanka, we mapped vertical hydraulic conductivities and modeled fluid flow patterns. The paper presents drawdown behaviors, aquifer recharging profiles, and evaluates sustainable water usage limits for deep tube-well installations.",
-      keywords: ["Groundwater Hydrology", "Aquifer Modeling", "Finite Difference Method", "Geotechnical Characterization", "Sustainable Extraction"],
-      researchArea: "Geotechnical Hydrology & Computational Hydraulics",
-      technicalReportUrl: "/Portfolio/certificates/MATLAB_Fundamentals_Course.pdf",
-      conferencePaper: "KDU Annual International Research Conference (Under Review)",
+      id: "soil-structure-interaction",
+      title: "Performance of Quad 4 Elements in Soil-Structure Interaction",
+      abstract: "This study investigates the computational accuracy and efficiency of 4-node quadrilateral (Quad-4) elements in finite element modeling of soil-structure interaction (SSI). By simulating foundation settlements and stress distributions under various loading conditions, the research highlights the shear locking phenomena in standard Quad-4 formulations and evaluates enhanced assumed strain methods in computational mechanics to mitigate stiffness overestimation.",
+      keywords: ["Finite Element Method", "Computational Mechanics", "Soil-Structure Interaction", "Quad-4 Elements", "Shear Locking", "Geotechnical Engineering"],
+      researchArea: "Computational Mechanics & Geotechnical Engineering",
+      technicalReportUrl: "#",
+      conferencePaper: "Under Preparation",
       futureScope: [
-        "Expand model parameters to cover 3D transient groundwater movement.",
-        "Implement machine learning tools to calibrate soil hydraulic coefficients.",
-        "Model contaminant transportation pathways through aquifer zones."
+        "Extend the analysis to higher-order elements (e.g., Quad-8) for comparative accuracy.",
+        "Implement non-linear constitutive soil models to simulate elastoplastic behavior.",
+        "Analyze dynamic soil-structure interaction under seismic loading conditions."
       ]
     },
     {

@@ -101,7 +101,7 @@ export const portfolioData: PortfolioData = {
       ],
       imageUrl: "/Portfolio/images/hero.jpeg",
       githubUrl: "https://github.com/Hasni2002",
-      reportPdfUrl: "/certificates/CAD_Workshop_Certificate.pdf"
+      reportPdfUrl: "/Portfolio/certificates/CAD_Workshop_Certificate.pdf"
     },
     {
       id: "groundwater-research",
@@ -137,7 +137,7 @@ export const portfolioData: PortfolioData = {
       ],
       imageUrl: "/Portfolio/images/groundwater.png",
       githubUrl: "https://github.com/Hasni2002",
-      reportPdfUrl: "/certificates/MATLAB_Fundamentals_Course.pdf"
+      reportPdfUrl: "/Portfolio/certificates/MATLAB_Fundamentals_Course.pdf"
     },
     {
       id: "structural-design",
@@ -174,7 +174,7 @@ export const portfolioData: PortfolioData = {
       ],
       imageUrl: "/Portfolio/images/structural.png",
       githubUrl: "https://github.com/Hasni2002",
-      reportPdfUrl: "/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf"
+      reportPdfUrl: "/Portfolio/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf"
     },
     {
       id: "transportation-engineering",
@@ -210,7 +210,7 @@ export const portfolioData: PortfolioData = {
       ],
       imageUrl: "/Portfolio/images/highway.png",
       githubUrl: "https://github.com/Hasni2002",
-      reportPdfUrl: "/certificates/Introduction_to_Highway_Design.pdf"
+      reportPdfUrl: "/Portfolio/certificates/Introduction_to_Highway_Design.pdf"
     }
   ],
   research: [
@@ -220,7 +220,7 @@ export const portfolioData: PortfolioData = {
       abstract: "This study explores groundwater flow rates through highly variable soil layers using finite difference approximations. By analyzing borehole datasets from Sri Lanka, we mapped vertical hydraulic conductivities and modeled fluid flow patterns. The paper presents drawdown behaviors, aquifer recharging profiles, and evaluates sustainable water usage limits for deep tube-well installations.",
       keywords: ["Groundwater Hydrology", "Aquifer Modeling", "Finite Difference Method", "Geotechnical Characterization", "Sustainable Extraction"],
       researchArea: "Geotechnical Hydrology & Computational Hydraulics",
-      technicalReportUrl: "/certificates/MATLAB_Fundamentals_Course.pdf",
+      technicalReportUrl: "/Portfolio/certificates/MATLAB_Fundamentals_Course.pdf",
       conferencePaper: "KDU Annual International Research Conference (Under Review)",
       futureScope: [
         "Expand model parameters to cover 3D transient groundwater movement.",
@@ -234,7 +234,7 @@ export const portfolioData: PortfolioData = {
       abstract: "High-performance concrete mix optimization requires balancing water-cement ratios, aggregate grading, and fly ash percentages. This paper develops a regression neural network mapping concrete ingredients to compressive strengths. The model achieved a 94% prediction accuracy, representing a faster alternative to traditional 28-day cylinder crushing tests.",
       keywords: ["Concrete Strength", "Predictive Modeling", "Neural Networks", "Sustainable Concrete", "Mix Optimization"],
       researchArea: "Materials Engineering & Artificial Intelligence",
-      technicalReportUrl: "/certificates/Concrete_Mix_Design_and_Rheology.pdf",
+      technicalReportUrl: "/Portfolio/certificates/Concrete_Mix_Design_and_Rheology.pdf",
       conferencePaper: "IESL Student Session (Abstract Accepted)",
       futureScope: [
         "Incorporate chemical admixture interaction variables in the training set.",
@@ -307,7 +307,7 @@ export const portfolioData: PortfolioData = {
       location: "Central Province, Sri Lanka",
       date: "November 2024",
       description: "Evaluated anchorage blocks, steel cables rust layers, hanger connection configurations, and checked concrete bridge abutment cracking.",
-      imageUrl: "/images/visit_bridge.png",
+      imageUrl: "/Portfolio/images/visit_bridge.png",
       category: "bridge"
     },
     {
@@ -316,27 +316,27 @@ export const portfolioData: PortfolioData = {
       location: "Labugama Reservoir Area, Sri Lanka",
       date: "February 2025",
       description: "Studied flow hydraulics across aeration basins, coagulant dosing chambers, sedimentation basins, and sand filter beds.",
-      imageUrl: "/images/visit_water.png",
+      imageUrl: "/Portfolio/images/visit_water.png",
       category: "water"
     }
   ],
   certificates: [
-    { id: "cert-1", title: "Student Membership Confirmation", issuer: "Institution of Civil Engineers (ICE), UK", date: "2024", url: "/certificates/ICE_Student_Membership.pdf" },
-    { id: "cert-2", title: "Design of High-rise Buildings (CPD)", issuer: "Structural Design Institute", date: "2025", url: "/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf" },
-    { id: "cert-3", title: "AI in Construction Technology Webinar", issuer: "Structural Design Institute", date: "2025", url: "/certificates/AI_in_Construction_Technology_Webinar.pdf" },
-    { id: "cert-4", title: "Precast Housing Solutions Hybrid Technical Talk", issuer: "Structural Design Institute", date: "2026", url: "/certificates/Precast_Housing_Solutions_Seminar.pdf" },
-    { id: "cert-5", title: "Basics of Engineering Management", issuer: "Alison Learning", date: "2026", url: "/certificates/Basics_of_Engineering_Management.pdf" },
-    { id: "cert-6", title: "Site Management Safety Training Scheme (SMSTS)", issuer: "Alison Learning", date: "2026", url: "/certificates/Site_Management_Safety_Training.pdf" },
-    { id: "cert-7", title: "Introduction to Structural Mechanics", issuer: "SCEL University", date: "2024", url: "/certificates/Introduction_to_Structural_Mechanics.pdf" },
-    { id: "cert-8", title: "Accelerating Manuscript Preparation using AI", issuer: "SCEL Webinar Series", date: "2024", url: "/certificates/AI_Manuscript_Preparation_Webinar.pdf" },
-    { id: "cert-9", title: "Concrete Mix Design & Rheology", issuer: "Industrial Webinar Program", date: "2024", url: "/certificates/Concrete_Mix_Design_and_Rheology.pdf" },
-    { id: "cert-10", title: "Geotechnical Site Investigation Certificate", issuer: "National Engineering Council", date: "2025", url: "/certificates/Geotechnical_Site_Investigation.pdf" },
-    { id: "cert-11", title: "Introduction to Prestressed Concrete", issuer: "Continuous Professional Development Program", date: "2026", url: "/certificates/Introduction_to_Prestressed_Concrete.pdf" },
-    { id: "cert-12", title: "Introduction to Highway Design", issuer: "Institution of Civil Engineers - UK (SLAICE)", date: "2025", url: "/certificates/Introduction_to_Highway_Design.pdf" },
-    { id: "cert-13", title: "AutoCAD CAD Workshop Certificate", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/certificates/CAD_Workshop_Certificate.pdf" },
-    { id: "cert-14", title: "Floating City Design Workshop", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/certificates/Floating_City_Design_Workshop.pdf" },
-    { id: "cert-15", title: "Mathematical Society Membership", issuer: "KDU Engineering Mathematical Society", date: "2024", url: "/certificates/Mathematical_Society_Membership.pdf" },
-    { id: "cert-16", title: "MATLAB Fundamentals Course Completion", issuer: "MathWorks", date: "2024", url: "/certificates/MATLAB_Fundamentals_Course.pdf" },
-    { id: "cert-17", title: "WS2_34 Workshop Certificate", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/certificates/WS2_34_Workshop_Certificate.pdf" }
+    { id: "cert-1", title: "Student Membership Confirmation", issuer: "Institution of Civil Engineers (ICE), UK", date: "2024", url: "/Portfolio/certificates/ICE_Student_Membership.pdf" },
+    { id: "cert-2", title: "Design of High-rise Buildings (CPD)", issuer: "Structural Design Institute", date: "2025", url: "/Portfolio/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf" },
+    { id: "cert-3", title: "AI in Construction Technology Webinar", issuer: "Structural Design Institute", date: "2025", url: "/Portfolio/certificates/AI_in_Construction_Technology_Webinar.pdf" },
+    { id: "cert-4", title: "Precast Housing Solutions Hybrid Technical Talk", issuer: "Structural Design Institute", date: "2026", url: "/Portfolio/certificates/Precast_Housing_Solutions_Seminar.pdf" },
+    { id: "cert-5", title: "Basics of Engineering Management", issuer: "Alison Learning", date: "2026", url: "/Portfolio/certificates/Basics_of_Engineering_Management.pdf" },
+    { id: "cert-6", title: "Site Management Safety Training Scheme (SMSTS)", issuer: "Alison Learning", date: "2026", url: "/Portfolio/certificates/Site_Management_Safety_Training.pdf" },
+    { id: "cert-7", title: "Introduction to Structural Mechanics", issuer: "SCEL University", date: "2024", url: "/Portfolio/certificates/Introduction_to_Structural_Mechanics.pdf" },
+    { id: "cert-8", title: "Accelerating Manuscript Preparation using AI", issuer: "SCEL Webinar Series", date: "2024", url: "/Portfolio/certificates/AI_Manuscript_Preparation_Webinar.pdf" },
+    { id: "cert-9", title: "Concrete Mix Design & Rheology", issuer: "Industrial Webinar Program", date: "2024", url: "/Portfolio/certificates/Concrete_Mix_Design_and_Rheology.pdf" },
+    { id: "cert-10", title: "Geotechnical Site Investigation Certificate", issuer: "National Engineering Council", date: "2025", url: "/Portfolio/certificates/Geotechnical_Site_Investigation.pdf" },
+    { id: "cert-11", title: "Introduction to Prestressed Concrete", issuer: "Continuous Professional Development Program", date: "2026", url: "/Portfolio/certificates/Introduction_to_Prestressed_Concrete.pdf" },
+    { id: "cert-12", title: "Introduction to Highway Design", issuer: "Institution of Civil Engineers - UK (SLAICE)", date: "2025", url: "/Portfolio/certificates/Introduction_to_Highway_Design.pdf" },
+    { id: "cert-13", title: "AutoCAD CAD Workshop Certificate", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/Portfolio/certificates/CAD_Workshop_Certificate.pdf" },
+    { id: "cert-14", title: "Floating City Design Workshop", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/Portfolio/certificates/Floating_City_Design_Workshop.pdf" },
+    { id: "cert-15", title: "Mathematical Society Membership", issuer: "KDU Engineering Mathematical Society", date: "2024", url: "/Portfolio/certificates/Mathematical_Society_Membership.pdf" },
+    { id: "cert-16", title: "MATLAB Fundamentals Course Completion", issuer: "MathWorks", date: "2024", url: "/Portfolio/certificates/MATLAB_Fundamentals_Course.pdf" },
+    { id: "cert-17", title: "WS2_34 Workshop Certificate", issuer: "Faculty of Engineering, KDU", date: "2025", url: "/Portfolio/certificates/WS2_34_Workshop_Certificate.pdf" }
   ]
 };

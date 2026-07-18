@@ -24,7 +24,7 @@ export const portfolioData: PortfolioData = {
     {
       id: "edu-2",
       degree: "GCE Advanced Level (Physical Science Stream)",
-      institution: "High School, Sri Lanka",
+      institution: "KM/KM/Shams Central College, Sri Lanka",
       period: "2020",
       description: "Achieved A Grades in Mathematics & Physics. Key subjects: Combined Mathematics, Physics, Chemistry."
     }

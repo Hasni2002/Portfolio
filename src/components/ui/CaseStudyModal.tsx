@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Calculator, Target, Info, CheckCircle, AlertTriangle, Layers, BookOpen } from 'lucide-react';
+import { X, ExternalLink, Calculator, Target, Info, CheckCircle, Layers, BookOpen } from 'lucide-react';
 import { Project } from '../../types';
 
 interface CaseStudyModalProps {
@@ -90,7 +90,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   {project.problemStatement && (
                     <section className="bg-red-900/10 border border-red-500/20 rounded-xl p-6">
                       <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-white">
-                        <AlertTriangle className="text-red-400" size={24} /> 
+                        <Info className="text-red-400" size={24} /> 
                         Problem Statement
                       </h3>
                       <p className="text-slate-300 leading-relaxed">

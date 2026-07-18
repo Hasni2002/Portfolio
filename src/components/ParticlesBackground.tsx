@@ -16,7 +16,7 @@ const ParticlesBackground: React.FC = () => {
   if (!init) return null;
 
   return (
-    <div className="fixed inset-0 pointer-events-none z-0 mix-blend-screen opacity-60">
+    <div className="fixed inset-0 pointer-events-none z-0 mix-blend-screen opacity-50">
       <Particles
         id="tsparticles"
         className="h-full w-full"
@@ -32,31 +32,37 @@ const ParticlesBackground: React.FC = () => {
             events: {
               onHover: {
                 enable: true,
-                mode: "repulse",
+                mode: "grab",
                 parallax: {
                   enable: true,
-                  force: 60,
+                  force: 30,
                   smooth: 10
                 }
               },
             },
             modes: {
-              repulse: {
-                distance: 100,
-                duration: 0.4,
+              grab: {
+                distance: 140,
+                links: {
+                  opacity: 0.8
+                }
               },
             },
           },
           particles: {
             color: {
-              value: ["#10b981", "#34d399", "#ffffff"],
+              value: ["#3b82f6", "#60a5fa", "#f59e0b"],
             },
             links: {
-              color: "#10b981",
-              distance: 150,
+              color: "#60a5fa",
+              distance: 180,
               enable: true,
-              opacity: 0.15,
-              width: 1,
+              opacity: 0.25,
+              width: 1.5,
+              triangles: {
+                enable: true,
+                opacity: 0.03
+              }
             },
             move: {
               direction: "none",
@@ -64,8 +70,8 @@ const ParticlesBackground: React.FC = () => {
               outModes: {
                 default: "bounce",
               },
-              random: true,
-              speed: 0.8,
+              random: false,
+              speed: 0.4,
               straight: false,
             },
             number: {
@@ -74,26 +80,16 @@ const ParticlesBackground: React.FC = () => {
                 width: 1920,
                 height: 1080,
               },
-              value: 60,
+              value: 70,
             },
             opacity: {
-              value: { min: 0.1, max: 0.5 },
-              animation: {
-                enable: true,
-                speed: 1,
-                sync: false,
-              }
+              value: { min: 0.3, max: 0.7 },
             },
             shape: {
-              type: "circle",
+              type: ["circle", "triangle"],
             },
             size: {
-              value: { min: 1, max: 4 },
-              animation: {
-                enable: true,
-                speed: 2,
-                sync: false,
-              }
+              value: { min: 2, max: 5 },
             },
           },
           detectRetina: true,

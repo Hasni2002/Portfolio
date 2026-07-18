@@ -7,21 +7,22 @@ export default {
   theme: {
     extend: {
       colors: {
-        background: "#0f0f0f", // Dark black from vanilla
-        surface: "#1a1a1a", // rgba(26,26,26) from vanilla
+        background: "#0a0f18", // Deep slate/navy background
+        surface: "#141b29", // Slightly lighter slate for cards
         accent: {
-          light: "#34d399",
-          DEFAULT: "#10b981", // Green primary
-          dark: "#059669",
+          light: "#60a5fa", // Blue-400
+          DEFAULT: "#3b82f6", // Blue-500 (Steel blue)
+          dark: "#2563eb", // Blue-600
         },
-        purple: {
-          light: "#2dd4bf", // teal-400
-          DEFAULT: "#14b8a6", // teal-500
-          dark: "#0f766e", // teal-700
+        purple: { // We'll repurpose 'purple' for safety orange / amber highlights
+          light: "#fbbf24", // Amber-400
+          DEFAULT: "#f59e0b", // Amber-500
+          dark: "#d97706", // Amber-600
         }
       },
       fontFamily: {
         sans: ['Inter', 'sans-serif'],
+        display: ['Montserrat', 'sans-serif'],
       },
       animation: {
         'blob': 'blob 7s infinite',

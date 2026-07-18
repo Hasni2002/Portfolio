@@ -9,7 +9,7 @@ const Hero: React.FC = () => {
     <section id="home" className="relative min-h-screen flex items-center pt-20 overflow-hidden">
       {/* Background Elements */}
       <div className="absolute top-1/4 left-1/4 w-72 h-72 bg-accent/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
-      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-purple/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000"></div>
+      <div className="absolute top-1/3 right-1/4 w-72 h-72 bg-purple/10 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-2000"></div>
       <div className="absolute bottom-1/4 left-1/3 w-72 h-72 bg-accent-light/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob animation-delay-4000"></div>
 
       <div className="container mx-auto px-6 md:px-12 relative z-10">
@@ -19,7 +19,7 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5 }}
-            className="mb-4 inline-block px-4 py-1.5 rounded-full border border-accent/30 bg-accent/10 text-accent text-sm font-medium"
+            className="mb-4 inline-block px-4 py-1.5 rounded-full border border-accent/30 bg-accent/10 text-accent text-sm font-medium tracking-wide uppercase"
           >
             Welcome to my portfolio
           </motion.div>
@@ -28,17 +28,17 @@ const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            className="text-5xl md:text-7xl font-bold tracking-tight mb-6"
+            className="text-5xl md:text-7xl font-extrabold tracking-tight mb-6"
           >
             Hi, I'm <br />
-            <span className="glitch-text" data-text={portfolioData.personal.name}>{portfolioData.personal.name}</span>
+            <span className="text-transparent bg-clip-text bg-gradient-to-r from-accent to-purple">{portfolioData.personal.name}</span>
           </motion.h1>
           
           <motion.h2 
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.2 }}
-            className="text-2xl md:text-3xl font-medium text-slate-300 mb-6"
+            className="text-2xl md:text-3xl font-semibold text-slate-300 mb-6"
           >
             {portfolioData.personal.role}
           </motion.h2>
@@ -59,7 +59,7 @@ const Hero: React.FC = () => {
             className="flex flex-wrap gap-4 justify-center lg:justify-start"
           >
             <Link to="projects" smooth={true} duration={500} offset={-80}>
-              <button className="flex items-center gap-2 bg-accent hover:bg-accent-light text-white px-6 py-3 rounded-xl font-medium transition-all shadow-[0_0_15px_rgba(16,185,129,0.4)] hover:shadow-[0_0_30px_rgba(16,185,129,0.8)] border-2 border-accent hover:bg-transparent">
+              <button className="flex items-center gap-2 bg-accent hover:bg-accent-dark text-white px-6 py-3 rounded-xl font-medium transition-all shadow-[0_0_15px_rgba(59,130,246,0.4)] hover:shadow-[0_0_30px_rgba(59,130,246,0.8)] border-2 border-accent hover:border-accent-dark">
                 View Projects <ArrowRight size={18} />
               </button>
             </Link>

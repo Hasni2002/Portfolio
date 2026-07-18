@@ -8,6 +8,8 @@ const navLinks = [
   { name: 'About', to: 'about' },
   { name: 'Skills', to: 'skills' },
   { name: 'Projects', to: 'projects' },
+  { name: 'Research', to: 'research' },
+  { name: 'Field Work', to: 'site-visits' },
   { name: 'Certificates', to: 'certificates' },
   { name: 'CV', to: 'cv' },
   { name: 'Contact', to: 'contact' },
@@ -39,7 +41,7 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold tracking-tighter"
           >
-            <span className="text-white">Shimsy</span>
+            <span className="text-white">Hasni</span>
             <span className="text-gradient">.</span>
           </motion.div>
         </Link>

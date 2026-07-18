@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Calculator, Target, Info, CheckCircle2, AlertTriangle, Layers, BookOpen } from 'lucide-react';
+import { X, ExternalLink, Calculator, Target, Info, CheckCircle, AlertTriangle, Layers, BookOpen } from 'lucide-react';
 import { Project } from '../../types';
 
 interface CaseStudyModalProps {
@@ -134,7 +134,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                               {calc.formula}
                             </div>
                             <div className="flex items-start gap-2">
-                              <CheckCircle2 className="text-emerald-400 shrink-0 mt-0.5" size={18} />
+                              <CheckCircle className="text-emerald-400 shrink-0 mt-0.5" size={18} />
                               <span className="text-slate-200 font-medium">{calc.result}</span>
                             </div>
                           </div>

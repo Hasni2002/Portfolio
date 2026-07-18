@@ -23,6 +23,7 @@ export interface Project {
   lessonsLearned?: string[];
   futureImprovements?: string[];
   reportPdfUrl?: string;
+  documents?: { title: string; url: string }[];
 }
 
 export interface ResearchPaper {

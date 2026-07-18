@@ -1,6 +1,6 @@
 import React, { useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
-import { X, ExternalLink, Calculator, Target, Info, CheckCircle, Layers, BookOpen } from 'lucide-react';
+import { X, ExternalLink, Calculator, Target, Info, CheckCircle, Layers, BookOpen, Camera } from 'lucide-react';
 import type { Project } from '../../types';
 
 interface CaseStudyModalProps {
@@ -173,6 +173,23 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                     </section>
                   )}
 
+                  {/* Gallery */}
+                  {project.gallery && project.gallery.length > 0 && (
+                    <section>
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-white">
+                        <Camera className="text-accent" size={24} /> 
+                        Project Gallery
+                      </h3>
+                      <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
+                        {project.gallery.map((imgUrl, idx) => (
+                          <a key={idx} href={imgUrl} target="_blank" rel="noopener noreferrer" className="block aspect-square rounded-xl overflow-hidden border border-white/10 hover:border-accent/50 transition-colors">
+                            <img src={imgUrl} alt={`${project.title} Gallery ${idx + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
+                          </a>
+                        ))}
+                      </div>
+                    </section>
+                  )}
+
                 </div>
 
                 {/* Sidebar Column */}
@@ -205,8 +222,8 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                     </div>
                   )}
 
-                  {/* Links */}
-                  {(project.liveUrl || project.githubUrl || project.reportPdfUrl) && (
+                  {/* Links & Documents */}
+                  {(project.liveUrl || project.githubUrl || project.reportPdfUrl || (project.documents && project.documents.length > 0)) && (
                     <div className="bg-background/50 border border-white/5 rounded-xl p-6 space-y-3">
                       <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">Resources</h4>
                       
@@ -215,10 +232,27 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                           href={project.reportPdfUrl} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-accent/20 hover:bg-accent/30 border border-accent/30 text-accent text-sm font-medium transition-colors"
+                          className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-accent/20 hover:bg-accent/30 border border-accent/30 text-accent text-sm font-medium transition-colors mb-4"
                         >
                           <BookOpen size={18} /> View Technical Report
                         </a>
+                      )}
+                      
+                      {project.documents && project.documents.length > 0 && (
+                        <div className="space-y-2 mt-4 mb-4 max-h-[300px] overflow-y-auto custom-scrollbar pr-1">
+                          {project.documents.map((doc, idx) => (
+                            <a 
+                              key={idx}
+                              href={doc.url} 
+                              target="_blank" 
+                              rel="noopener noreferrer"
+                              className="flex items-center gap-3 w-full py-2.5 px-3 rounded-lg bg-accent/5 hover:bg-accent/15 border border-accent/10 hover:border-accent/30 text-accent text-sm transition-all group"
+                            >
+                              <BookOpen size={16} className="shrink-0 text-accent/70 group-hover:text-accent" />
+                              <span className="truncate flex-1 text-left">{doc.title}</span>
+                            </a>
+                          ))}
+                        </div>
                       )}
                       
                       {project.liveUrl && (

@@ -88,7 +88,19 @@ export const portfolioData: PortfolioData = {
       ],
       gallery: [
         "/Portfolio/images/hero.jpeg",
-        "/Portfolio/images/survey_site.jpg"
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.00.37 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.00.38 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.01.02 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.03.01 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.03.02 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.03.29 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.04.13 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.05.36 PM (1).jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.05.36 PM (2).jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.05.36 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.05.37 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.05.44 PM.jpeg",
+        "/Portfolio/projects/survey-camp/images/WhatsApp Image 2026-07-18 at 12.06.00 PM.jpeg"
       ],
       results: "Successfully produced a comprehensive contour map of the 5-hectare area and a detailed, cost-optimized road corridor alignment with a mass-haul diagram showing balanced cut-and-fill allocations.",
       lessonsLearned: [
@@ -101,7 +113,20 @@ export const portfolioData: PortfolioData = {
       ],
       imageUrl: "/Portfolio/images/hero.jpeg",
       githubUrl: "https://github.com/Hasni2002",
-      reportPdfUrl: "/Portfolio/certificates/CAD_Workshop_Certificate.pdf"
+      documents: [
+        { title: "Detail Drawing", url: "/Portfolio/projects/survey-camp/documents/01-DETAIL DRAWING-Layout1.pdf" },
+        { title: "Contour with Points", url: "/Portfolio/projects/survey-camp/documents/03 Contour with points-Layout1.pdf" },
+        { title: "Contour on Detail", url: "/Portfolio/projects/survey-camp/documents/04 Contour on detail - Layout1.pdf" },
+        { title: "All Stations", url: "/Portfolio/projects/survey-camp/documents/05 ALL stations-Layout1.pdf" },
+        { title: "Propose Plan", url: "/Portfolio/projects/survey-camp/documents/06 PROPOSE PLAN-Layout3.pdf" },
+        { title: "Propose Plan with Contour", url: "/Portfolio/projects/survey-camp/documents/07 PROPOSE PLAN - WITH CONTOUR-Layout1.pdf" },
+        { title: "Longitudinal Section Final", url: "/Portfolio/projects/survey-camp/documents/08 LS FINAL-Layout2.pdf" },
+        { title: "Cross Section 0000-0030", url: "/Portfolio/projects/survey-camp/documents/09 cs final-0000-0030.pdf" },
+        { title: "Cross Section 0040-0070", url: "/Portfolio/projects/survey-camp/documents/10 cs final-0040-0070.pdf" },
+        { title: "Cross Section 0080-0110", url: "/Portfolio/projects/survey-camp/documents/11 cs final-0080-0110.pdf" },
+        { title: "Cross Section 0110-0130", url: "/Portfolio/projects/survey-camp/documents/12 cs final-0110-0130.pdf" },
+        { title: "Contour with 0.1 Interval", url: "/Portfolio/projects/survey-camp/documents/contour with o.1 interval-Layout1.pdf" }
+      ]
     },
     {
       id: "groundwater-research",

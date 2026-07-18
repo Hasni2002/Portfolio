@@ -246,6 +246,44 @@ export const portfolioData: PortfolioData = {
       documents: [
         { title: "HDP Group 3", url: "/Portfolio/projects/highway-design/documents/HDP Group 3.pdf" }
       ]
+    },
+    {
+      id: "vertical-wind-turbine",
+      title: "Vertical Axis Wind Turbine Project",
+      category: "Renewable Energy Engineering",
+      description: "Design, structural analysis, and prototyping of a Vertical Axis Wind Turbine (VAWT) optimized for low wind speed environments.",
+      objectives: [
+        "Design a robust and aerodynamic blade profile for optimal wind energy capture.",
+        "Perform structural analysis to ensure stability under dynamic wind loads.",
+        "Prototype and test the efficiency of the wind turbine model."
+      ],
+      problemStatement: "The need for efficient and compact renewable energy solutions for urban and low wind speed regions where traditional horizontal axis turbines are impractical.",
+      methodology: [
+        "Aerodynamic profiling and CAD modeling of the turbine blades.",
+        "Material selection for weight reduction and structural integrity.",
+        "Fabrication of the prototype and performance testing in simulated wind conditions."
+      ],
+      calculations: [],
+      techStack: ["CAD Modeling", "Structural Analysis", "Renewable Energy Systems"],
+      gallery: [
+        "/Portfolio/projects/vertical-wind-turbine/images/WhatsApp Image 2026-07-18 at 12.08.41 PM.jpeg",
+        "/Portfolio/projects/vertical-wind-turbine/images/WhatsApp Image 2026-07-18 at 12.09.26 PM.jpeg",
+        "/Portfolio/projects/vertical-wind-turbine/images/WhatsApp Image 2026-07-18 at 12.09.27 PM.jpeg"
+      ],
+      results: "Successfully designed and prototyped a functional Vertical Axis Wind Turbine capable of generating power at lower wind thresholds.",
+      lessonsLearned: [
+        "Balancing the turbine assembly is critical to reducing vibration and mechanical wear.",
+        "Blade pitch angle significantly impacts the start-up torque of vertical turbines."
+      ],
+      futureImprovements: [
+        "Implement a smart braking system to prevent over-speeding during storms.",
+        "Integrate a more efficient alternator to increase power output conversion."
+      ],
+      imageUrl: "/Portfolio/projects/vertical-wind-turbine/images/WhatsApp Image 2026-07-18 at 12.08.41 PM.jpeg",
+      githubUrl: "https://github.com/Hasni2002",
+      documents: [
+        { title: "Final VAWT Report", url: "/Portfolio/projects/vertical-wind-turbine/documents/final VAWT.pdf" }
+      ]
     }
   ],
   research: [

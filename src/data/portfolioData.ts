@@ -9,7 +9,7 @@ export const portfolioData: PortfolioData = {
     email: "hasni@example.com",
     github: "https://github.com/Hasni2002",
     linkedin: "https://www.linkedin.com/in/hasniahamed",
-    profileImage: "/images/profile.png",
+    profileImage: "/Portfolio/images/profile.png",
   },
   education: [
     {
@@ -86,8 +86,8 @@ export const portfolioData: PortfolioData = {
         "Cross-sectional detailing at 20m intervals."
       ],
       gallery: [
-        "/images/hero.jpeg",
-        "/images/survey_site.jpg"
+        "/Portfolio/images/hero.jpeg",
+        "/Portfolio/images/survey_site.jpg"
       ],
       results: "Successfully produced a comprehensive contour map of the 5-hectare area and a detailed, cost-optimized road corridor alignment with a mass-haul diagram showing balanced cut-and-fill allocations.",
       lessonsLearned: [
@@ -98,7 +98,7 @@ export const portfolioData: PortfolioData = {
         "Integrate RTK-GPS systems for faster control point verification.",
         "Utilize drone photogrammetry to build a high-resolution 3D mesh overlay."
       ],
-      imageUrl: "/images/hero.jpeg",
+      imageUrl: "/Portfolio/images/hero.jpeg",
       githubUrl: "https://github.com/Hasni2002",
       reportPdfUrl: "/certificates/CAD_Workshop_Certificate.pdf"
     },
@@ -124,7 +124,7 @@ export const portfolioData: PortfolioData = {
         { formula: "T = K × D", description: "Aquifer transmissivity calculated from hydraulic conductivity and thickness.", result: "T = 145 m²/day" }
       ],
       techStack: ["MATLAB", "Python", "QGIS"],
-      gallery: ["/images/groundwater.png"],
+      gallery: ["/Portfolio/images/groundwater.png"],
       results: "Delineated critical drawdown zones and provided recommendations for maximum sustainable extraction limits, suggesting a 20% reduction in pumping during dry seasons to prevent seawater intrusion.",
       lessonsLearned: [
         "Aquifer heterogeneity complicates deterministic models; stochastic models represent field conditions better.",
@@ -134,7 +134,7 @@ export const portfolioData: PortfolioData = {
         "Expand to a fully integrated MODFLOW model utilizing physical spatial grids.",
         "Integrate IoT-enabled real-time piezometric level sensors for model validation."
       ],
-      imageUrl: "/images/groundwater.png",
+      imageUrl: "/Portfolio/images/groundwater.png",
       githubUrl: "https://github.com/Hasni2002",
       reportPdfUrl: "/certificates/MATLAB_Fundamentals_Course.pdf"
     },
@@ -161,7 +161,7 @@ export const portfolioData: PortfolioData = {
         { formula: "M_Ed ≤ M_Rd", description: "Eurocode 2 ultimate limit state moment capacity comparison.", result: "M_Rd = 340 kNm > M_Ed = 295 kNm (Safe)" }
       ],
       techStack: ["ETABS", "SAP2000", "AutoCAD", "Revit"],
-      gallery: ["/images/structural.png"],
+      gallery: ["/Portfolio/images/structural.png"],
       results: "Successfully designed structural members complying with structural safety rules. Shear wall optimizations reduced lateral top displacement by 32%, saving 12% in concrete material volumes.",
       lessonsLearned: [
         "Torsional modes of vibration must be avoided early in structural floor planning.",
@@ -171,7 +171,7 @@ export const portfolioData: PortfolioData = {
         "Perform a non-linear push-over analysis to verify structural collapse margins.",
         "Introduce steel-concrete composite sections to reduce column dimensions."
       ],
-      imageUrl: "/images/structural.png",
+      imageUrl: "/Portfolio/images/structural.png",
       githubUrl: "https://github.com/Hasni2002",
       reportPdfUrl: "/certificates/Design_of_High_Rise_Buildings_SAP2000.pdf"
     },
@@ -197,7 +197,7 @@ export const portfolioData: PortfolioData = {
         { formula: "SN = a₁D₁ + a₂D₂m₂ + a₃D₃m₃", description: "AASHTO structural number equation for layer sizing.", result: "SN = 4.2 (Asphalt = 4\", Base = 6\", Subbase = 8\")" }
       ],
       techStack: ["Civil 3D", "MS Excel", "AutoCAD"],
-      gallery: ["/images/highway.png"],
+      gallery: ["/Portfolio/images/highway.png"],
       results: "Redesigned flexible pavement cross-section and drafted a channelized intersection layout with dedicated left-turn lanes, reducing delay times by 45%.",
       lessonsLearned: [
         "Drainage coefficient parameters drastically affect pavement thickness requirements.",
@@ -207,7 +207,7 @@ export const portfolioData: PortfolioData = {
         "Develop rigid concrete pavement options for high-temperature resistance.",
         "Simulate traffic flow using micro-simulation modeling tools (VISSIM)."
       ],
-      imageUrl: "/images/highway.png",
+      imageUrl: "/Portfolio/images/highway.png",
       githubUrl: "https://github.com/Hasni2002",
       reportPdfUrl: "/certificates/Introduction_to_Highway_Design.pdf"
     }
@@ -288,7 +288,7 @@ export const portfolioData: PortfolioData = {
       location: "Colombo, Sri Lanka",
       date: "March 2025",
       description: "Inspected ready-mix concrete casting of a thick foundation slab. Observed structural reinforcement spacing, post-tensioning duct layouts, and concrete slump test quality audits.",
-      imageUrl: "/images/visit_building.png",
+      imageUrl: "/Portfolio/images/visit_building.png",
       category: "construction"
     },
     {
@@ -297,7 +297,7 @@ export const portfolioData: PortfolioData = {
       location: "Galle-Matara Link, Sri Lanka",
       date: "July 2024",
       description: "Studied roadbed preparation, sub-grade soil compaction, bituminous layer spreading, and embankment slope stabilization utilizing geotextile sheets.",
-      imageUrl: "/images/highway.png",
+      imageUrl: "/Portfolio/images/highway.png",
       category: "construction"
     },
     {

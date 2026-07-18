@@ -1,8 +1,7 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { portfolioData } from '../../data/portfolioData';
-import { ExternalLink, Briefcase, BookOpen } from 'lucide-react';
-import { FaGithub } from 'react-icons/fa';
+import { Briefcase, BookOpen } from 'lucide-react';
 import CaseStudyModal from '../ui/CaseStudyModal';
 import { Project } from '../../types';
 

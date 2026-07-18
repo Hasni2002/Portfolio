@@ -45,8 +45,8 @@ const Skills: React.FC = () => {
                   {category.skills.map((skill, index) => (
                     <div key={skill.name}>
                       <div className="flex justify-between mb-2">
-                        <span className="font-medium text-slate-300">{skill.name}</span>
-                        <span className="text-slate-400 text-sm">{skill.level}%</span>
+                        <span className="font-medium text-slate-700 dark:text-slate-300">{skill.name}</span>
+                        <span className="text-slate-600 dark:text-slate-400 text-sm">{skill.level}%</span>
                       </div>
                       <div className="h-2 w-full bg-background rounded-full overflow-hidden">
                         <motion.div
@@ -72,3 +72,5 @@ const Skills: React.FC = () => {
 };
 
 export default Skills;
+
+

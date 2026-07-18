@@ -4,20 +4,22 @@ export default {
     "./index.html",
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
+  darkMode: 'class',
   theme: {
     extend: {
       colors: {
-        background: "#0a0f18", // Deep slate/navy background
-        surface: "#141b29", // Slightly lighter slate for cards
+        background: "var(--color-background)",
+        surface: "var(--color-surface)",
+        text: "var(--color-text)",
         accent: {
-          light: "#60a5fa", // Blue-400
-          DEFAULT: "#3b82f6", // Blue-500 (Steel blue)
-          dark: "#2563eb", // Blue-600
+          light: "var(--color-accent-light)",
+          DEFAULT: "var(--color-accent)",
+          dark: "var(--color-accent-dark)",
         },
-        purple: { // We'll repurpose 'purple' for safety orange / amber highlights
-          light: "#fbbf24", // Amber-400
-          DEFAULT: "#f59e0b", // Amber-500
-          dark: "#d97706", // Amber-600
+        purple: {
+          light: "var(--color-purple-light)",
+          DEFAULT: "var(--color-purple)",
+          dark: "var(--color-purple-dark)",
         }
       },
       fontFamily: {

@@ -28,19 +28,19 @@ const Certificates: React.FC = () => {
               <>
                 <div className="absolute inset-0 bg-gradient-to-br from-accent/5 to-purple/5 opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
                 <div className="relative z-10 flex flex-col h-full">
-                  <div className="p-3 bg-white/5 rounded-xl w-12 h-12 flex items-center justify-center mb-6 group-hover:bg-accent/20 group-hover:text-accent transition-colors">
+                  <div className="p-3 bg-slate-900/5 dark:bg-white/5 rounded-xl w-12 h-12 flex items-center justify-center mb-6 group-hover:bg-accent/20 group-hover:text-accent transition-colors">
                     <Award size={24} />
                   </div>
                   
-                  <h3 className="text-lg font-bold mb-2 group-hover:text-white transition-colors">{cert.title}</h3>
+                  <h3 className="text-lg font-bold mb-2 group-hover:text-slate-900 dark:text-white transition-colors">{cert.title}</h3>
                   
                   <div className="mt-auto pt-4 flex items-center justify-between">
                     <div>
-                      <p className="text-slate-400 text-sm font-medium">{cert.issuer}</p>
+                      <p className="text-slate-600 dark:text-slate-400 text-sm font-medium">{cert.issuer}</p>
                       <p className="text-slate-500 text-xs mt-1">{cert.date}</p>
                     </div>
                     {cert.url && (
-                      <div className="text-slate-400 hover:text-accent transition-colors" title="View Certificate">
+                      <div className="text-slate-600 dark:text-slate-400 hover:text-accent transition-colors" title="View Certificate">
                         <ExternalLink size={18} />
                       </div>
                     )}
@@ -80,15 +80,15 @@ const Certificates: React.FC = () => {
               initial={{ scale: 0.9, opacity: 0 }}
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.9, opacity: 0 }}
-              className="bg-surface relative w-full max-w-5xl rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.5)] border border-white/10 flex flex-col"
+              className="bg-surface relative w-full max-w-5xl rounded-2xl overflow-hidden shadow-[0_0_40px_rgba(0,0,0,0.5)] border border-slate-900/10 dark:border-white/10 flex flex-col"
               style={{ height: '85vh' }}
               onClick={(e) => e.stopPropagation()}
             >
-              <div className="flex items-center justify-between p-4 border-b border-white/10 bg-surface/80 backdrop-blur-md">
+              <div className="flex items-center justify-between p-4 border-b border-slate-900/10 dark:border-white/10 bg-surface/80 backdrop-blur-md">
                 <h3 className="text-xl font-bold">{selectedCert.title}</h3>
                 <button
                   onClick={() => setSelectedCert(null)}
-                  className="p-2 bg-white/5 hover:bg-accent rounded-full text-white transition-colors"
+                  className="p-2 bg-slate-900/5 dark:bg-white/5 hover:bg-accent rounded-full text-white transition-colors"
                 >
                   <X size={20} />
                 </button>
@@ -110,3 +110,5 @@ const Certificates: React.FC = () => {
 };
 
 export default Certificates;
+
+

@@ -35,7 +35,7 @@ const About: React.FC = () => {
               <BookOpen className="text-purple" size={24} />
               My Journey
             </h3>
-            <p className="text-slate-300 leading-relaxed text-lg">
+            <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
               {portfolioData.personal.bio}
             </p>
           </motion.div>
@@ -55,20 +55,20 @@ const About: React.FC = () => {
             <div className="space-y-8 relative before:absolute before:inset-0 before:ml-5 before:-translate-x-px md:before:mx-auto md:before:translate-x-0 before:h-full before:w-0.5 before:bg-gradient-to-b before:from-transparent before:via-slate-700 before:to-transparent">
               {portfolioData.education.map((edu) => (
                 <div key={edu.id} className="relative flex items-center justify-between md:justify-normal md:odd:flex-row-reverse group is-active">
-                  <div className="flex items-center justify-center w-10 h-10 rounded-full border border-white/10 bg-surface text-accent shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
+                  <div className="flex items-center justify-center w-10 h-10 rounded-full border border-slate-900/10 dark:border-white/10 bg-surface text-accent shadow shrink-0 md:order-1 md:group-odd:-translate-x-1/2 md:group-even:translate-x-1/2 z-10">
                     <div className="w-3 h-3 bg-accent rounded-full group-hover:scale-150 transition-transform duration-300"></div>
                   </div>
                   
                   <div className="w-[calc(100%-4rem)] md:w-[calc(50%-2.5rem)] glass-panel p-6 rounded-xl hover:border-accent/30 transition-colors">
                     <div className="flex flex-col sm:flex-row sm:justify-between sm:items-center mb-2 gap-2">
-                      <h4 className="font-bold text-lg text-white">{edu.degree}</h4>
+                      <h4 className="font-bold text-lg text-slate-900 dark:text-white">{edu.degree}</h4>
                       <span className="text-sm font-medium text-accent bg-accent/10 px-3 py-1 rounded-full whitespace-nowrap">
                         {edu.period}
                       </span>
                     </div>
-                    <div className="text-slate-400 font-medium mb-3">{edu.institution}</div>
+                    <div className="text-slate-600 dark:text-slate-400 font-medium mb-3">{edu.institution}</div>
                     {edu.description && (
-                      <p className="text-slate-400 text-sm">{edu.description}</p>
+                      <p className="text-slate-600 dark:text-slate-400 text-sm">{edu.description}</p>
                     )}
                   </div>
                 </div>
@@ -82,3 +82,5 @@ const About: React.FC = () => {
 };
 
 export default About;
+
+

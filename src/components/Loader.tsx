@@ -78,7 +78,7 @@ const Loader: React.FC<{ onLoadingComplete: () => void }> = ({ onLoadingComplete
               className="mt-8 flex items-center gap-3"
             >
               <div className="w-2 h-2 rounded-full bg-purple animate-ping"></div>
-              <span className="font-display font-semibold tracking-widest text-slate-300 uppercase text-sm">
+              <span className="font-display font-semibold tracking-widest text-slate-700 dark:text-slate-300 uppercase text-sm">
                 Engineering in Progress
               </span>
             </motion.div>
@@ -90,3 +90,5 @@ const Loader: React.FC<{ onLoadingComplete: () => void }> = ({ onLoadingComplete
 };
 
 export default Loader;
+
+

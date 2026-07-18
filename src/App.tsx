@@ -18,7 +18,7 @@ function App() {
   const [isLoading, setIsLoading] = useState(true);
 
   return (
-    <div className="bg-background min-h-screen text-slate-200 selection:bg-accent/30 selection:text-white relative">
+    <div className="bg-background min-h-screen text-slate-800 dark:text-slate-200 selection:bg-accent/30 selection:text-white relative">
       <AnimatePresence mode="wait">
         {isLoading ? (
           <Loader key="loader" onLoadingComplete={() => setIsLoading(false)} />
@@ -54,3 +54,5 @@ function App() {
 }
 
 export default App;
+
+

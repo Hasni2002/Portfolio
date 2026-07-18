@@ -19,7 +19,7 @@ const Research: React.FC = () => {
             Academic <span className="text-gradient">Research</span>
           </h2>
           <div className="w-20 h-1 bg-accent rounded-full mb-6"></div>
-          <p className="text-slate-400 max-w-2xl text-lg">
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
             Investigating advanced computational models and sustainable materials to push the boundaries of modern civil engineering.
           </p>
         </motion.div>
@@ -32,13 +32,13 @@ const Research: React.FC = () => {
               whileInView={{ opacity: 1, x: 0 }}
               viewport={{ once: true, margin: "-50px" }}
               transition={{ duration: 0.5, delay: index * 0.1 }}
-              className="glass-panel rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-8 border border-white/5 hover:border-accent/30 transition-colors"
+              className="glass-panel rounded-2xl p-6 md:p-8 flex flex-col md:flex-row gap-8 border border-slate-900/5 dark:border-white/5 hover:border-accent/30 transition-colors"
             >
               <div className="flex-grow">
                 <span className="text-xs text-accent font-semibold uppercase tracking-wider mb-2 block">
                   {paper.researchArea}
                 </span>
-                <h3 className="text-2xl font-bold text-white mb-4 leading-tight">
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-4 leading-tight">
                   {paper.title}
                 </h3>
                 
@@ -49,16 +49,16 @@ const Research: React.FC = () => {
                   </div>
                 )}
 
-                <div className="bg-background/50 border border-white/5 rounded-xl p-5 mb-6">
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-2">Abstract</h4>
-                  <p className="text-slate-300 leading-relaxed italic text-sm md:text-base">
+                <div className="bg-background/50 border border-slate-900/5 dark:border-white/5 rounded-xl p-5 mb-6">
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-2">Abstract</h4>
+                  <p className="text-slate-700 dark:text-slate-300 leading-relaxed italic text-sm md:text-base">
                     "{paper.abstract}"
                   </p>
                 </div>
                 
                 <div className="flex flex-wrap gap-2 mb-6">
                   {paper.keywords.map((keyword, idx) => (
-                    <span key={idx} className="text-xs font-medium text-slate-300 bg-white/5 border border-white/10 px-3 py-1 rounded-full">
+                    <span key={idx} className="text-xs font-medium text-slate-700 dark:text-slate-300 bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 px-3 py-1 rounded-full">
                       {keyword}
                     </span>
                   ))}
@@ -67,11 +67,11 @@ const Research: React.FC = () => {
               
               {/* Right Column / Actions & Future Scope */}
               <div className="md:w-80 shrink-0 flex flex-col">
-                <div className="bg-surface/80 border border-white/5 rounded-xl p-6 mb-6 flex-grow">
-                  <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">Future Scope</h4>
+                <div className="bg-surface/80 border border-slate-900/5 dark:border-white/5 rounded-xl p-6 mb-6 flex-grow">
+                  <h4 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-4">Future Scope</h4>
                   <ul className="space-y-3">
                     {paper.futureScope.map((scope, idx) => (
-                      <li key={idx} className="flex gap-2 text-sm text-slate-300">
+                      <li key={idx} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
                         <ChevronRight className="text-accent shrink-0 mt-0.5" size={16} />
                         <span>{scope}</span>
                       </li>
@@ -99,3 +99,5 @@ const Research: React.FC = () => {
 };
 
 export default Research;
+
+

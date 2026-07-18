@@ -46,38 +46,38 @@ const Projects: React.FC = () => {
                 
                 {/* Overlay on hover */}
                 <div className="absolute inset-0 bg-accent/20 opacity-0 group-hover:opacity-100 transition-opacity duration-300 z-10 backdrop-blur-[2px] flex items-center justify-center">
-                  <span className="text-white font-bold tracking-wider uppercase text-sm border border-white/50 px-4 py-2 rounded-lg bg-black/40">
+                  <span className="text-slate-900 dark:text-white font-bold tracking-wider uppercase text-sm border border-white/50 px-4 py-2 rounded-lg bg-black/40">
                     View Case Study
                   </span>
                 </div>
               </div>
               
               <div className="p-6 flex-grow flex flex-col relative z-20 -mt-6">
-                <div className="bg-surface/80 backdrop-blur-md rounded-xl p-4 border border-white/5 flex-grow shadow-lg flex flex-col">
+                <div className="bg-surface/80 backdrop-blur-md rounded-xl p-4 border border-slate-900/5 dark:border-white/5 flex-grow shadow-lg flex flex-col">
                   {project.category && (
                     <span className="text-xs text-accent font-semibold uppercase tracking-wider mb-2">
                       {project.category}
                     </span>
                   )}
                   <h3 className="text-xl font-bold mb-3 group-hover:text-accent transition-colors">{project.title}</h3>
-                  <p className="text-slate-400 text-sm mb-6 line-clamp-3">
+                  <p className="text-slate-600 dark:text-slate-400 text-sm mb-6 line-clamp-3">
                     {project.description}
                   </p>
                   
                   <div className="flex flex-wrap gap-2 mb-6 mt-auto">
                     {project.techStack.slice(0, 3).map((tech) => (
-                      <span key={tech} className="text-xs font-medium text-slate-300 bg-white/5 px-2.5 py-1 rounded-md">
+                      <span key={tech} className="text-xs font-medium text-slate-700 dark:text-slate-300 bg-slate-900/5 dark:bg-white/5 px-2.5 py-1 rounded-md">
                         {tech}
                       </span>
                     ))}
                     {project.techStack.length > 3 && (
-                      <span className="text-xs font-medium text-slate-400 px-1 py-1">
+                      <span className="text-xs font-medium text-slate-600 dark:text-slate-400 px-1 py-1">
                         +{project.techStack.length - 3} more
                       </span>
                     )}
                   </div>
 
-                  <div className="flex gap-3 pt-4 border-t border-white/10">
+                  <div className="flex gap-3 pt-4 border-t border-slate-900/10 dark:border-white/10">
                     <button 
                       onClick={(e) => {
                         e.stopPropagation();
@@ -106,3 +106,5 @@ const Projects: React.FC = () => {
 };
 
 export default Projects;
+
+

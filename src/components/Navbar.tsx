@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-scroll';
 import { Menu, X } from 'lucide-react';
 import { motion, AnimatePresence } from 'framer-motion';
+import ThemeToggle from './ThemeToggle';
 
 const navLinks = [
   { name: 'Home', to: 'home' },
@@ -32,7 +33,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   return (
-    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-surface/80 backdrop-blur-md shadow-lg border-b border-white/5 py-4' : 'bg-transparent py-6'}`}>
+    <header className={`fixed top-0 w-full z-50 transition-all duration-300 ${scrolled ? 'bg-surface/80 backdrop-blur-md shadow-lg border-b border-slate-900/5 dark:border-white/5 py-4' : 'bg-transparent py-6'}`}>
       <div className="container mx-auto px-6 md:px-12 flex justify-between items-center">
         {/* Logo */}
         <Link to="home" smooth={true} duration={500} className="cursor-pointer">
@@ -41,39 +42,49 @@ const Navbar: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             className="text-2xl font-bold tracking-tighter"
           >
-            <span className="text-white">Hasni</span>
+            <span className="text-text">Hasni</span>
             <span className="text-gradient">.</span>
           </motion.div>
         </Link>
 
         {/* Desktop Navigation */}
-        <nav className="hidden md:flex space-x-8">
-          {navLinks.map((link, index) => (
-            <motion.div
-              key={link.name}
-              initial={{ opacity: 0, y: -10 }}
-              animate={{ opacity: 1, y: 0 }}
-              transition={{ delay: index * 0.1 }}
-            >
-              <Link
-                to={link.to}
-                smooth={true}
-                duration={500}
-                offset={-80}
-                className="text-sm font-medium text-slate-300 hover:text-white hover:text-gradient transition-colors cursor-pointer relative group"
+        <div className="hidden md:flex items-center space-x-8">
+          <nav className="flex space-x-8">
+            {navLinks.map((link, index) => (
+              <motion.div
+                key={link.name}
+                initial={{ opacity: 0, y: -10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ delay: index * 0.1 }}
               >
-                {link.name}
-                <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
-              </Link>
-            </motion.div>
-          ))}
-        </nav>
+                <Link
+                  to={link.to}
+                  smooth={true}
+                  duration={500}
+                  offset={-80}
+                  className="text-sm font-medium text-slate-700 dark:text-slate-300 hover:text-text hover:text-gradient transition-colors cursor-pointer relative group"
+                >
+                  {link.name}
+                  <span className="absolute -bottom-1 left-0 w-0 h-[2px] bg-accent transition-all duration-300 group-hover:w-full"></span>
+                </Link>
+              </motion.div>
+            ))}
+          </nav>
+          <motion.div
+            initial={{ opacity: 0, scale: 0.8 }}
+            animate={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.8 }}
+          >
+            <ThemeToggle />
+          </motion.div>
+        </div>
 
         {/* Mobile Menu Button */}
-        <div className="md:hidden">
+        <div className="flex items-center gap-4 md:hidden">
+          <ThemeToggle />
           <button 
             onClick={() => setIsOpen(!isOpen)}
-            className="text-slate-300 hover:text-white transition-colors"
+            className="text-slate-700 dark:text-slate-300 hover:text-text transition-colors"
           >
             {isOpen ? <X size={24} /> : <Menu size={24} />}
           </button>
@@ -87,7 +98,7 @@ const Navbar: React.FC = () => {
             initial={{ opacity: 0, height: 0 }}
             animate={{ opacity: 1, height: 'auto' }}
             exit={{ opacity: 0, height: 0 }}
-            className="md:hidden bg-surface/95 backdrop-blur-xl border-b border-white/10 overflow-hidden"
+            className="md:hidden bg-surface/95 backdrop-blur-xl border-b border-slate-900/10 dark:border-white/10 overflow-hidden"
           >
             <div className="flex flex-col space-y-4 px-6 py-6">
               {navLinks.map((link) => (
@@ -98,7 +109,7 @@ const Navbar: React.FC = () => {
                   duration={500}
                   offset={-80}
                   onClick={() => setIsOpen(false)}
-                  className="text-base font-medium text-slate-300 hover:text-accent transition-colors cursor-pointer"
+                  className="text-base font-medium text-slate-700 dark:text-slate-300 hover:text-accent transition-colors cursor-pointer"
                 >
                   {link.name}
                 </Link>
@@ -112,3 +123,5 @@ const Navbar: React.FC = () => {
 };
 
 export default Navbar;
+
+

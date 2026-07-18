@@ -19,7 +19,7 @@ const SiteVisits: React.FC = () => {
             Field Work & <span className="text-gradient">Site Visits</span>
           </h2>
           <div className="w-20 h-1 bg-accent rounded-full mb-6"></div>
-          <p className="text-slate-400 max-w-2xl text-lg">
+          <p className="text-slate-600 dark:text-slate-400 max-w-2xl text-lg">
             Practical exposure bridges the gap between theoretical calculations and real-world execution. Here are some key projects I've inspected on-site.
           </p>
         </motion.div>
@@ -50,9 +50,9 @@ const SiteVisits: React.FC = () => {
                   {visit.category}
                 </span>
                 
-                <h3 className="text-2xl font-bold text-white mb-2">{visit.title}</h3>
+                <h3 className="text-2xl font-bold text-slate-900 dark:text-white mb-2">{visit.title}</h3>
                 
-                <div className="flex flex-wrap items-center gap-4 text-sm text-slate-300 mb-4">
+                <div className="flex flex-wrap items-center gap-4 text-sm text-slate-700 dark:text-slate-300 mb-4">
                   <div className="flex items-center gap-1.5">
                     <MapPin size={16} className="text-accent" />
                     <span>{visit.location}</span>
@@ -63,7 +63,7 @@ const SiteVisits: React.FC = () => {
                   </div>
                 </div>
                 
-                <p className="text-slate-200 line-clamp-3 group-hover:line-clamp-none transition-all duration-300 text-sm sm:text-base hidden sm:block">
+                <p className="text-slate-800 dark:text-slate-200 line-clamp-3 group-hover:line-clamp-none transition-all duration-300 text-sm sm:text-base hidden sm:block">
                   {visit.description}
                 </p>
               </div>
@@ -76,3 +76,5 @@ const SiteVisits: React.FC = () => {
 };
 
 export default SiteVisits;
+
+

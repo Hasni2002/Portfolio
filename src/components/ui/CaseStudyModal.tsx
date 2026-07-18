@@ -42,7 +42,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
             initial={{ opacity: 0, y: 50, scale: 0.95 }}
             animate={{ opacity: 1, y: 0, scale: 1 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-5xl max-h-[90vh] bg-surface border border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col z-10"
+            className="relative w-full max-w-5xl max-h-[90vh] bg-surface border border-slate-900/10 dark:border-white/10 rounded-2xl shadow-2xl overflow-hidden flex flex-col z-10"
           >
             {/* Header / Hero Image */}
             <div className="relative h-64 md:h-80 shrink-0 overflow-hidden">
@@ -55,7 +55,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
               />
               <button 
                 onClick={onClose}
-                className="absolute top-4 right-4 z-20 p-2 bg-surface/50 hover:bg-surface backdrop-blur-md rounded-full border border-white/10 text-white transition-colors"
+                className="absolute top-4 right-4 z-20 p-2 bg-surface/50 hover:bg-surface backdrop-blur-md rounded-full border border-slate-900/10 dark:border-white/10 text-slate-900 dark:text-white transition-colors"
               >
                 <X size={24} />
               </button>
@@ -64,7 +64,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                 <span className="inline-block px-3 py-1 bg-accent/20 text-accent border border-accent/20 rounded-full text-xs font-semibold mb-3">
                   {project.category || 'Civil Engineering'}
                 </span>
-                <h2 className="text-3xl md:text-4xl font-bold text-white mb-2">{project.title}</h2>
+                <h2 className="text-3xl md:text-4xl font-bold text-slate-900 dark:text-white mb-2">{project.title}</h2>
               </div>
             </div>
 
@@ -77,11 +77,11 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   
                   {/* Overview */}
                   <section>
-                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-white">
+                    <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-white">
                       <Info className="text-accent" size={24} /> 
                       Project Overview
                     </h3>
-                    <p className="text-slate-300 leading-relaxed text-lg">
+                    <p className="text-slate-700 dark:text-slate-300 leading-relaxed text-lg">
                       {project.description}
                     </p>
                   </section>
@@ -89,11 +89,11 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   {/* Problem Statement */}
                   {project.problemStatement && (
                     <section className="bg-red-900/10 border border-red-500/20 rounded-xl p-6">
-                      <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-white">
+                      <h3 className="text-xl font-bold mb-3 flex items-center gap-2 text-slate-900 dark:text-white">
                         <Info className="text-red-400" size={24} /> 
                         Problem Statement
                       </h3>
-                      <p className="text-slate-300 leading-relaxed">
+                      <p className="text-slate-700 dark:text-slate-300 leading-relaxed">
                         {project.problemStatement}
                       </p>
                     </section>
@@ -102,7 +102,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   {/* Methodology & Process */}
                   {project.methodology && (
                     <section>
-                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-white">
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-white">
                         <Layers className="text-accent" size={24} /> 
                         Engineering Methodology
                       </h3>
@@ -112,7 +112,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                             <div className="flex-shrink-0 w-8 h-8 rounded-full bg-accent/20 flex items-center justify-center text-accent font-bold">
                               {idx + 1}
                             </div>
-                            <p className="text-slate-300 pt-1">{step}</p>
+                            <p className="text-slate-700 dark:text-slate-300 pt-1">{step}</p>
                           </li>
                         ))}
                       </ul>
@@ -122,20 +122,20 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   {/* Calculations */}
                   {project.calculations && project.calculations.length > 0 && (
                     <section>
-                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-white">
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-white">
                         <Calculator className="text-accent" size={24} /> 
                         Key Calculations & Formulas
                       </h3>
                       <div className="grid grid-cols-1 gap-4">
                         {project.calculations.map((calc, idx) => (
-                          <div key={idx} className="bg-black/30 border border-white/5 rounded-xl p-5 hover:border-accent/30 transition-colors">
-                            <p className="text-slate-400 text-sm mb-2">{calc.description}</p>
-                            <div className="font-mono text-lg text-accent bg-background/50 py-3 px-4 rounded-lg mb-3 border border-white/5 overflow-x-auto">
+                          <div key={idx} className="bg-black/30 border border-slate-900/5 dark:border-white/5 rounded-xl p-5 hover:border-accent/30 transition-colors">
+                            <p className="text-slate-600 dark:text-slate-400 text-sm mb-2">{calc.description}</p>
+                            <div className="font-mono text-lg text-accent bg-background/50 py-3 px-4 rounded-lg mb-3 border border-slate-900/5 dark:border-white/5 overflow-x-auto">
                               {calc.formula}
                             </div>
                             <div className="flex items-start gap-2">
                               <CheckCircle className="text-emerald-400 shrink-0 mt-0.5" size={18} />
-                              <span className="text-slate-200 font-medium">{calc.result}</span>
+                              <span className="text-slate-800 dark:text-slate-200 font-medium">{calc.result}</span>
                             </div>
                           </div>
                         ))}
@@ -146,12 +146,12 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   {/* Results */}
                   {project.results && (
                     <section>
-                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-white">
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-white">
                         <Target className="text-accent" size={24} /> 
                         Outcomes & Results
                       </h3>
                       <div className="bg-emerald-900/10 border border-emerald-500/20 rounded-xl p-6">
-                        <p className="text-slate-200 leading-relaxed">
+                        <p className="text-slate-800 dark:text-slate-200 leading-relaxed">
                           {project.results}
                         </p>
                       </div>
@@ -161,11 +161,11 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   {/* Lessons Learned */}
                   {project.lessonsLearned && (
                     <section>
-                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-white">
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-white">
                         <BookOpen className="text-accent" size={24} /> 
                         Lessons Learned
                       </h3>
-                      <ul className="list-disc list-inside space-y-2 text-slate-300">
+                      <ul className="list-disc list-inside space-y-2 text-slate-700 dark:text-slate-300">
                         {project.lessonsLearned.map((lesson, idx) => (
                           <li key={idx}>{lesson}</li>
                         ))}
@@ -176,13 +176,13 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                   {/* Gallery */}
                   {project.gallery && project.gallery.length > 0 && (
                     <section>
-                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-white">
+                      <h3 className="text-xl font-bold mb-4 flex items-center gap-2 text-slate-900 dark:text-white">
                         <Camera className="text-accent" size={24} /> 
                         Project Gallery
                       </h3>
                       <div className="grid grid-cols-2 sm:grid-cols-3 gap-4">
                         {project.gallery.map((imgUrl, idx) => (
-                          <a key={idx} href={imgUrl} target="_blank" rel="noopener noreferrer" className="block aspect-square rounded-xl overflow-hidden border border-white/10 hover:border-accent/50 transition-colors">
+                          <a key={idx} href={imgUrl} target="_blank" rel="noopener noreferrer" className="block aspect-square rounded-xl overflow-hidden border border-slate-900/10 dark:border-white/10 hover:border-accent/50 transition-colors">
                             <img src={imgUrl} alt={`${project.title} Gallery ${idx + 1}`} className="w-full h-full object-cover hover:scale-105 transition-transform duration-300" />
                           </a>
                         ))}
@@ -196,11 +196,11 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                 <div className="space-y-8">
                   
                   {/* Tech Stack */}
-                  <div className="bg-background/50 border border-white/5 rounded-xl p-6">
-                    <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">Tech Stack & Tools</h4>
+                  <div className="bg-background/50 border border-slate-900/5 dark:border-white/5 rounded-xl p-6">
+                    <h4 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-4">Tech Stack & Tools</h4>
                     <div className="flex flex-wrap gap-2">
                       {project.techStack.map((tech) => (
-                        <span key={tech} className="text-xs font-medium text-white bg-white/10 border border-white/10 px-3 py-1.5 rounded-md">
+                        <span key={tech} className="text-xs font-medium text-slate-900 dark:text-white bg-slate-900/10 dark:bg-white/10 border border-slate-900/10 dark:border-white/10 px-3 py-1.5 rounded-md">
                           {tech}
                         </span>
                       ))}
@@ -209,11 +209,11 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
 
                   {/* Objectives */}
                   {project.objectives && (
-                    <div className="bg-background/50 border border-white/5 rounded-xl p-6">
-                      <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">Core Objectives</h4>
+                    <div className="bg-background/50 border border-slate-900/5 dark:border-white/5 rounded-xl p-6">
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-4">Core Objectives</h4>
                       <ul className="space-y-3">
                         {project.objectives.map((obj, idx) => (
-                          <li key={idx} className="flex gap-2 text-sm text-slate-300">
+                          <li key={idx} className="flex gap-2 text-sm text-slate-700 dark:text-slate-300">
                             <Target className="text-accent shrink-0 mt-0.5" size={16} />
                             <span>{obj}</span>
                           </li>
@@ -224,8 +224,8 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
 
                   {/* Links & Documents */}
                   {(project.liveUrl || project.githubUrl || project.reportPdfUrl || (project.documents && project.documents.length > 0)) && (
-                    <div className="bg-background/50 border border-white/5 rounded-xl p-6 space-y-3">
-                      <h4 className="text-sm font-bold uppercase tracking-wider text-slate-400 mb-4">Resources</h4>
+                    <div className="bg-background/50 border border-slate-900/5 dark:border-white/5 rounded-xl p-6 space-y-3">
+                      <h4 className="text-sm font-bold uppercase tracking-wider text-slate-600 dark:text-slate-400 mb-4">Resources</h4>
                       
                       {project.reportPdfUrl && (
                         <a 
@@ -260,7 +260,7 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
                           href={project.liveUrl} 
                           target="_blank" 
                           rel="noopener noreferrer"
-                          className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-white/5 hover:bg-white/10 border border-white/10 text-white text-sm font-medium transition-colors"
+                          className="flex items-center justify-center gap-2 w-full py-3 rounded-lg bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:bg-white/10 border border-slate-900/10 dark:border-white/10 text-slate-900 dark:text-white text-sm font-medium transition-colors"
                         >
                           <ExternalLink size={18} /> Live Demo / Site
                         </a>
@@ -279,3 +279,5 @@ const CaseStudyModal: React.FC<CaseStudyModalProps> = ({ project, isOpen, onClos
 };
 
 export default CaseStudyModal;
+
+

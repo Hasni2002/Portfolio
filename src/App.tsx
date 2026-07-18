@@ -6,6 +6,8 @@ import Hero from './components/sections/Hero';
 import About from './components/sections/About';
 import Skills from './components/sections/Skills';
 import Projects from './components/sections/Projects';
+import Research from './components/sections/Research';
+import SiteVisits from './components/sections/SiteVisits';
 import Certificates from './components/sections/Certificates';
 import CVSection from './components/sections/CVSection';
 import Contact from './components/sections/Contact';
@@ -36,6 +38,8 @@ function App() {
                 <About />
                 <Skills />
                 <Projects />
+                <Research />
+                <SiteVisits />
                 <Certificates />
                 <CVSection />
                 <Contact />

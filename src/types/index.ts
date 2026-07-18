@@ -1,11 +1,59 @@
+export interface ProjectCalculations {
+  formula: string;
+  description: string;
+  result: string;
+}
+
 export interface Project {
   id: string;
   title: string;
+  category?: string;
   description: string;
   techStack: string[];
   imageUrl: string;
   githubUrl?: string;
   liveUrl?: string;
+  objectives?: string[];
+  problemStatement?: string;
+  methodology?: string[];
+  calculations?: ProjectCalculations[];
+  constructionProcess?: string[];
+  gallery?: string[];
+  results?: string;
+  lessonsLearned?: string[];
+  futureImprovements?: string[];
+  reportPdfUrl?: string;
+}
+
+export interface ResearchPaper {
+  id: string;
+  title: string;
+  abstract: string;
+  keywords: string[];
+  researchArea: string;
+  technicalReportUrl?: string;
+  presentationUrl?: string;
+  conferencePaper?: string;
+  futureScope: string[];
+}
+
+export interface SiteVisit {
+  id: string;
+  title: string;
+  location: string;
+  date: string;
+  description: string;
+  imageUrl: string;
+  category: 'construction' | 'bridge' | 'water' | 'geotech' | 'laboratory' | 'survey';
+}
+
+export interface Experience {
+  id: string;
+  role: string;
+  organization: string;
+  period: string;
+  description: string[];
+  category: 'internship' | 'leadership' | 'training' | 'volunteer';
 }
 
 export interface Skill {
@@ -50,4 +98,7 @@ export interface PortfolioData {
   skills: SkillCategory[];
   projects: Project[];
   certificates: Certificate[];
+  research: ResearchPaper[];
+  siteVisits: SiteVisit[];
+  experience: Experience[];
 }
